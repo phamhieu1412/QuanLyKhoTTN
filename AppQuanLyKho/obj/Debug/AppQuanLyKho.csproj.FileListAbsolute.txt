@@ -1,0 +1,13 @@
+G:\BtapC#\AppQuanLyKho\AppQuanLyKho\bin\Debug\AppQuanLyKho.exe.config
+G:\BtapC#\AppQuanLyKho\AppQuanLyKho\bin\Debug\AppQuanLyKho.exe
+G:\BtapC#\AppQuanLyKho\AppQuanLyKho\bin\Debug\AppQuanLyKho.pdb
+G:\BtapC#\AppQuanLyKho\AppQuanLyKho\obj\Debug\AppQuanLyKho.csprojAssemblyReference.cache
+G:\BtapC#\AppQuanLyKho\AppQuanLyKho\obj\Debug\AppQuanLyKho.Form1.resources
+G:\BtapC#\AppQuanLyKho\AppQuanLyKho\obj\Debug\AppQuanLyKho.Properties.Resources.resources
+G:\BtapC#\AppQuanLyKho\AppQuanLyKho\obj\Debug\AppQuanLyKho.csproj.GenerateResource.cache
+G:\BtapC#\AppQuanLyKho\AppQuanLyKho\obj\Debug\AppQuanLyKho.csproj.CoreCompileInputs.cache
+G:\BtapC#\AppQuanLyKho\AppQuanLyKho\obj\Debug\AppQuanLyKho.exe
+G:\BtapC#\AppQuanLyKho\AppQuanLyKho\obj\Debug\AppQuanLyKho.pdb
+G:\BtapC#\AppQuanLyKho\AppQuanLyKho\obj\Debug\AppQuanLyKho.GiaoDienChinh.resources
+G:\BtapC#\AppQuanLyKho\AppQuanLyKho\obj\Debug\AppQuanLyKho.HoaDonBanHang.resources
+G:\BtapC#\AppQuanLyKho\AppQuanLyKho\obj\Debug\AppQuanLyKho.NhapKho.resources
