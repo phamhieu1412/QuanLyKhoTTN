@@ -1,0 +1,16 @@
+use case
+	b1: ai su dung-> nhan vien, quan ly, technician
+	    he thong tuong tac voi he thong-> nha cung cap
+	b2: tim actor->chuc nang
+	    kiem tra so hang trong kho
+	    them, sua, xoa: san pham, phieu nhap, phieu xuat
+	    tim kiem, in
+	    thay doi mk, thay doi thong tin
+	    bao tri, sua chua
+ so do 
+	nhan vien -> dang nhap, xem va thay doi thong tin ban than,, xem thong tin sp
+		  -> them, sua, xoa: sp, pn, px
+		  -> tim kiem theo ten
+		  -> in phieu nhap, phieu xuat
+	admin     -> dang nhap, xem thay doi thong tin ban than
+		  -> quan ly nhan vien: them, sua, xoa nv
