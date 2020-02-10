@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AppQuanLyKho
 {
-    public partial class HoaDonBanHang : Form
+    public partial class DoiMatKhau : Form
     {
-        public HoaDonBanHang()
+        public DoiMatKhau()
         {
             InitializeComponent();
         }
