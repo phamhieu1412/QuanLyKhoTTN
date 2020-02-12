@@ -12,9 +12,11 @@ namespace AppQuanLyKho
 {
     public partial class PhieuXuat : Form
     {
+        List<SanPham> danhSachSanPham;
         public PhieuXuat()
         {
             InitializeComponent();
+            danhSachSanPham = new List<SanPham>();
         }
     }
 }

@@ -14,9 +14,14 @@ namespace AppQuanLyKho
         private string nuocSanXuat;
         private int donGia;
         private string phanLoai;
-        public SanPham()
+        public SanPham(string maSanPham, string tenSanPham, int hamMucDuTru, string nuocSanXuat, int donGia, string phanLoai)
         {
-
+            this.maSanPham = maSanPham;
+            this.tenSanPham = tenSanPham;
+            this.hamMucDuTru = hamMucDuTru;
+            this.nuocSanXuat = nuocSanXuat;
+            this.donGia = donGia;
+            this.phanLoai = phanLoai;
         }
 
         public string MaSanPham { get => maSanPham; set => maSanPham = value; }
