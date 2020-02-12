@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AppQuanLyKho
 {
-    public partial class DoiMatKhau : Form
+    public partial class NhapSanPham : Form
     {
-        public DoiMatKhau()
+        public NhapSanPham()
         {
             InitializeComponent();
         }
