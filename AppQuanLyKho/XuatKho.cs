@@ -10,14 +10,13 @@ using System.Windows.Forms;
 
 namespace AppQuanLyKho
 {
-    public partial class NhapKho : Form
+    public partial class PhieuXuat : Form
     {
         List<SanPham> danhSachSanPham;
-        public NhapKho()
+        public PhieuXuat()
         {
             InitializeComponent();
             danhSachSanPham = new List<SanPham>();
-
         }
     }
 }

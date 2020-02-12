@@ -55,7 +55,7 @@
             this.label2.Location = new System.Drawing.Point(23, 85);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 13);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 12;
             this.label2.Text = "Tên đăng nhập:";
             // 
             // tbUserName
@@ -63,14 +63,14 @@
             this.tbUserName.Location = new System.Drawing.Point(111, 82);
             this.tbUserName.Name = "tbUserName";
             this.tbUserName.Size = new System.Drawing.Size(164, 20);
-            this.tbUserName.TabIndex = 2;
+            this.tbUserName.TabIndex = 1;
             // 
             // tbPassword
             // 
             this.tbPassword.Location = new System.Drawing.Point(111, 119);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(164, 20);
-            this.tbPassword.TabIndex = 4;
+            this.tbPassword.TabIndex = 2;
             this.tbPassword.UseSystemPasswordChar = true;
             // 
             // label3
@@ -79,7 +79,7 @@
             this.label3.Location = new System.Drawing.Point(23, 122);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 13);
-            this.label3.TabIndex = 3;
+            this.label3.TabIndex = 13;
             this.label3.Text = "Mật khẩu";
             // 
             // btnLogIn
@@ -87,18 +87,20 @@
             this.btnLogIn.Location = new System.Drawing.Point(66, 185);
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(75, 23);
-            this.btnLogIn.TabIndex = 5;
+            this.btnLogIn.TabIndex = 4;
             this.btnLogIn.Text = "Đăng nhập";
             this.btnLogIn.UseVisualStyleBackColor = true;
+            this.btnLogIn.Click += new System.EventHandler(this.BtnLogIn_Click);
             // 
             // btnExit
             // 
             this.btnExit.Location = new System.Drawing.Point(159, 185);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 6;
+            this.btnExit.TabIndex = 5;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // cbShowPass
             // 
@@ -106,7 +108,7 @@
             this.cbShowPass.Location = new System.Drawing.Point(111, 151);
             this.cbShowPass.Name = "cbShowPass";
             this.cbShowPass.Size = new System.Drawing.Size(109, 17);
-            this.cbShowPass.TabIndex = 7;
+            this.cbShowPass.TabIndex = 3;
             this.cbShowPass.Text = "Hiển thị mật khẩu";
             this.cbShowPass.UseVisualStyleBackColor = true;
             // 
@@ -124,7 +126,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

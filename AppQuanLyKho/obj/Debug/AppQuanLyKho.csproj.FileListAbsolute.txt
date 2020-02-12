@@ -9,5 +9,6 @@ G:\BtapC#\AppQuanLyKho\AppQuanLyKho\obj\Debug\AppQuanLyKho.csproj.CoreCompileInp
 G:\BtapC#\AppQuanLyKho\AppQuanLyKho\obj\Debug\AppQuanLyKho.exe
 G:\BtapC#\AppQuanLyKho\AppQuanLyKho\obj\Debug\AppQuanLyKho.pdb
 G:\BtapC#\AppQuanLyKho\AppQuanLyKho\obj\Debug\AppQuanLyKho.GiaoDienChinh.resources
-G:\BtapC#\AppQuanLyKho\AppQuanLyKho\obj\Debug\AppQuanLyKho.HoaDonBanHang.resources
-G:\BtapC#\AppQuanLyKho\AppQuanLyKho\obj\Debug\AppQuanLyKho.NhapKho.resources
+G:\BtapC#\AppQuanLyKho\AppQuanLyKho\obj\Debug\AppQuanLyKho.DanhSachNhanVien.resources
+G:\BtapC#\AppQuanLyKho\AppQuanLyKho\obj\Debug\AppQuanLyKho.DoiMatKhau.resources
+G:\BtapC#\AppQuanLyKho\AppQuanLyKho\obj\Debug\AppQuanLyKho.ThongTinNV.resources
