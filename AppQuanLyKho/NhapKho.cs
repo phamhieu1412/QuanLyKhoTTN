@@ -12,9 +12,12 @@ namespace AppQuanLyKho
 {
     public partial class NhapKho : Form
     {
+        List<SanPham> danhSachSanPham;
         public NhapKho()
         {
             InitializeComponent();
+            danhSachSanPham = new List<SanPham>();
+
         }
     }
 }

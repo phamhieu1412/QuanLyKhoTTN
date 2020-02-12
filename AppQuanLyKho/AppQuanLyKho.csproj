@@ -71,6 +71,7 @@
     <Compile Include="GiaoDienChinh.Designer.cs">
       <DependentUpon>GiaoDienChinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="SanPham.cs" />
     <Compile Include="TroGiup.cs">
       <SubType>Form</SubType>
     </Compile>
