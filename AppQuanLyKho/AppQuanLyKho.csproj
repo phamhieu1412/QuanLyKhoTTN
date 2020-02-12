@@ -47,82 +47,85 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectionString.cs" />
-    <Compile Include="DanhSachNhanVien.cs">
+    <Compile Include="Controller\NhanVienController.cs" />
+    <Compile Include="Model\NhanVien.cs" />
+    <Compile Include="View\DanhSachNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DanhSachNhanVien.Designer.cs">
+    <Compile Include="View\DanhSachNhanVien.Designer.cs">
       <DependentUpon>DanhSachNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="DoiMatKhau.cs">
+    <Compile Include="View\DoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DoiMatKhau.Designer.cs">
+    <Compile Include="View\DoiMatKhau.Designer.cs">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
-    <Compile Include="DangNhap.cs">
+    <Compile Include="View\DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DangNhap.Designer.cs">
+    <Compile Include="View\DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="NhapSanPham.cs">
+    <Compile Include="View\NhapSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NhapSanPham.Designer.cs">
+    <Compile Include="View\NhapSanPham.Designer.cs">
       <DependentUpon>NhapSanPham.cs</DependentUpon>
     </Compile>
-    <Compile Include="GiaoDienChinh.cs">
+    <Compile Include="View\GiaoDienChinh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GiaoDienChinh.Designer.cs">
+    <Compile Include="View\GiaoDienChinh.Designer.cs">
       <DependentUpon>GiaoDienChinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="SanPham.cs" />
-    <Compile Include="TroGiup.cs">
+    <Compile Include="Controller\dataProvider.cs" />
+    <Compile Include="Model\SanPham.cs" />
+    <Compile Include="View\TroGiup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TroGiup.Designer.cs">
+    <Compile Include="View\TroGiup.Designer.cs">
       <DependentUpon>TroGiup.cs</DependentUpon>
     </Compile>
-    <Compile Include="XuatKho.cs">
+    <Compile Include="View\XuatKho.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="XuatKho.Designer.cs">
+    <Compile Include="View\XuatKho.Designer.cs">
       <DependentUpon>XuatKho.cs</DependentUpon>
     </Compile>
-    <Compile Include="NhapKho.cs">
+    <Compile Include="View\NhapKho.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NhapKho.Designer.cs">
+    <Compile Include="View\NhapKho.Designer.cs">
       <DependentUpon>NhapKho.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ThongTinNv.cs">
+    <Compile Include="View\ThongTinNv.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThongTinNv.Designer.cs">
+    <Compile Include="View\ThongTinNv.Designer.cs">
       <DependentUpon>ThongTinNv.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DanhSachNhanVien.resx">
+    <EmbeddedResource Include="View\DanhSachNhanVien.resx">
       <DependentUpon>DanhSachNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DoiMatKhau.resx">
+    <EmbeddedResource Include="View\DoiMatKhau.resx">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DangNhap.resx">
+    <EmbeddedResource Include="View\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NhapSanPham.resx">
+    <EmbeddedResource Include="View\NhapSanPham.resx">
       <DependentUpon>NhapSanPham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GiaoDienChinh.resx">
+    <EmbeddedResource Include="View\GiaoDienChinh.resx">
       <DependentUpon>GiaoDienChinh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NhapKho.resx">
+    <EmbeddedResource Include="View\NhapKho.resx">
       <DependentUpon>NhapKho.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="XuatKho.resx">
+    <EmbeddedResource Include="View\XuatKho.resx">
       <DependentUpon>XuatKho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -134,7 +137,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ThongTinNv.resx">
+    <EmbeddedResource Include="View\ThongTinNv.resx">
       <DependentUpon>ThongTinNv.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -150,5 +153,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
