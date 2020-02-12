@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AppQuanLyKho
+namespace AppQuanLyKho.View
 {
-    public partial class DoiMatKhau : Form
+    public partial class ThongTinNV : Form
     {
-        public DoiMatKhau()
+        public ThongTinNV()
         {
             InitializeComponent();
         }

@@ -177,7 +177,7 @@ values('NCC030', N'Công ty Cổ phần Dược phẩm Vinacare', N'Số 18 ngá
 
 
 insert into SanPham 
-values('SP001', N'', , N'', N'', '', '', , '', '')
+values('SP001', N'c', 10, N'', N'', 12, 'L001')
 
 
 
@@ -188,7 +188,7 @@ values('SP001', 'PN001', 50, 450000)
 
 
 insert into PhieuNhap 
-values('PN001', '2018-4-5', 22500000, N'', 'NCC001', 'NV001')
+values('PN001', '2018-4-5', 22500000, N'', 'NCC001', 'phamtrunghieu')
 
 
 /*
@@ -201,7 +201,6 @@ values()
 
 insert into CT_PhieuXuat
 values()
-
 
 
 /*
@@ -356,20 +355,28 @@ END
 
 ------------------------------------------------------------------------------------------------------------------
 --THEM NHAN VIEN 
-CREATE PROC THEMNHANVIEN(@TENDN VARCHAR(20), @MATKHAU VARCHAR(50),@HOTEN NVARCHAR(50),
-@DIACHI NVARCHAR(50) , @SDT VARCHAR(10) ,@NGAYSINH DATE, @GIOITINH BIT , @EMAIL VARCHAR(30))AS
+create PROC THEMNHANVIEN(@TENDN VARCHAR(20), @MATKHAU VARCHAR(50),@HOTEN NVARCHAR(50),
+@DIACHI NVARCHAR(50) , @SDT VARCHAR(10) ,@NGAYSINH DATE, @GIOITINH BIT , @EMAIL VARCHAR(30), @ISACTIVE bit )AS
 BEGIN
-	INSERT INTO NhanVien(TenDN ,MatKhau ,Hoten ,DiaChi ,SDT ,NgaySinh ,GioiTinh ,Email )
-	Values(@TENDN ,@MATKHAU ,@HOTEN ,@DIACHI ,@SDT ,@NGAYSINH ,@GIOITINH ,@EMAIL )
+	INSERT INTO NhanVien(TenDN ,MatKhau ,Hoten ,DiaChi ,SDT ,NgaySinh ,GioiTinh ,Email, isActive )
+	Values(@TENDN ,@MATKHAU ,@HOTEN ,@DIACHI ,@SDT ,@NGAYSINH ,@GIOITINH ,@EMAIL, @ISACTIVE )
 END
 
+alter table NhanVien add isActive bit
+select * from NhanVien
+update NhanVien set isActive = 1
+
+select * from SanPham
+select * from PhieuNhap
+select * from CT_PhieuNhap
+delete from CT_PhieuNhap where MaSP = 'PN001'
 --SUA THONG TIN NHAN VIEN
 CREATE PROC SUATHONGTINNHANVIEN( @TENDN VARCHAR(20), @MATKHAU VARCHAR(50),@HOTEN NVARCHAR(50),
-@DIACHI NVARCHAR(50) , @SDT VARCHAR(10) ,@NGAYSINH DATE, @GIOITINH BIT , @EMAIL VARCHAR(30))AS
+@DIACHI NVARCHAR(50) , @SDT VARCHAR(10) ,@NGAYSINH DATE, @GIOITINH BIT , @EMAIL VARCHAR(30), @ISACTIVE bit )AS
 BEGIN
 	UPDATE NhanVien
 	SET TenDN=@TENDN ,MatKhau=@MATKHAU ,Hoten=@HOTEN ,DiaChi=@DIACHI ,SDT=@SDT ,
-		NgaySinh=@NGAYSINH ,GioiTinh =@GIOITINH ,Email = @EMAIL 
+		NgaySinh=@NGAYSINH ,GioiTinh =@GIOITINH ,Email = @EMAIL, isActive = @ISACTIVE 
 	WHERE TenDN=@TENDN 
 END
 -- XOA THONG TIN NHAN VIEN

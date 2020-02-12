@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppQuanLyKho.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,13 +9,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AppQuanLyKho
+namespace AppQuanLyKho.View
 {
-    public partial class TroGiup : Form
+    public partial class PhieuXuat : Form
     {
-        public TroGiup()
+        List<SanPham> danhSachSanPham;
+        public PhieuXuat()
         {
             InitializeComponent();
+            danhSachSanPham = new List<SanPham>();
         }
     }
 }

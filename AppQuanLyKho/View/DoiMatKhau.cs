@@ -8,15 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AppQuanLyKho
+namespace AppQuanLyKho.View
 {
-    public partial class PhieuXuat : Form
+    public partial class DoiMatKhau : Form
     {
-        List<SanPham> danhSachSanPham;
-        public PhieuXuat()
+        public DoiMatKhau()
         {
             InitializeComponent();
-            danhSachSanPham = new List<SanPham>();
         }
     }
 }

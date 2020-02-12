@@ -1,4 +1,4 @@
-﻿namespace AppQuanLyKho
+﻿namespace AppQuanLyKho.View
 {
     partial class TroGiup
     {

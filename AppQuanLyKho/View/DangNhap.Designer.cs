@@ -1,6 +1,6 @@
-﻿namespace AppQuanLyKho
+﻿namespace AppQuanLyKho.View
 {
-    partial class Form1
+    partial class DangNhap
     {
         /// <summary>
         /// Required designer variable.
@@ -112,7 +112,7 @@
             this.cbShowPass.Text = "Hiển thị mật khẩu";
             this.cbShowPass.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // DangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -125,9 +125,9 @@
             this.Controls.Add(this.tbUserName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "DangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Dang nhap";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();

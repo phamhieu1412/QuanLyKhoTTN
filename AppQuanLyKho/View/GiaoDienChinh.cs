@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
-namespace AppQuanLyKho
+namespace AppQuanLyKho.View
 {
     public partial class GiaoDienChinh : Form
     {

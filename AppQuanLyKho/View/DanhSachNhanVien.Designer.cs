@@ -1,4 +1,4 @@
-﻿namespace AppQuanLyKho
+﻿namespace AppQuanLyKho.View
 {
     partial class DanhSachNhanVien
     {
@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.gbThemMoi = new System.Windows.Forms.GroupBox();
-            this.tbQuyen = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.tbDiaChi = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.cbGT = new System.Windows.Forms.ComboBox();
@@ -58,8 +56,6 @@
             // 
             // gbThemMoi
             // 
-            this.gbThemMoi.Controls.Add(this.tbQuyen);
-            this.gbThemMoi.Controls.Add(this.label7);
             this.gbThemMoi.Controls.Add(this.tbDiaChi);
             this.gbThemMoi.Controls.Add(this.label6);
             this.gbThemMoi.Controls.Add(this.cbGT);
@@ -78,23 +74,6 @@
             this.gbThemMoi.TabIndex = 0;
             this.gbThemMoi.TabStop = false;
             this.gbThemMoi.Text = "Thêm mới";
-            // 
-            // tbQuyen
-            // 
-            this.tbQuyen.FormattingEnabled = true;
-            this.tbQuyen.Location = new System.Drawing.Point(62, 198);
-            this.tbQuyen.Name = "tbQuyen";
-            this.tbQuyen.Size = new System.Drawing.Size(127, 21);
-            this.tbQuyen.TabIndex = 7;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 201);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 13);
-            this.label7.TabIndex = 20;
-            this.label7.Text = "Quyền";
             // 
             // tbDiaChi
             // 
@@ -292,8 +271,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox gbThemMoi;
-        private System.Windows.Forms.ComboBox tbQuyen;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tbDiaChi;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cbGT;

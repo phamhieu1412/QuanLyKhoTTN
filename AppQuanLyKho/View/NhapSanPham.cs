@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AppQuanLyKho
+namespace AppQuanLyKho.View
 {
-    public partial class DanhSachNhanVien : Form
+    public partial class NhapSanPham : Form
     {
-        public DanhSachNhanVien()
+        public NhapSanPham()
         {
             InitializeComponent();
         }
