@@ -24,10 +24,9 @@ namespace AppQuanLyKho.Controller
                 SqlDataAdapter adap = new SqlDataAdapter(cmd);
                 adap.Fill(data);
             }
-            catch
+            catch(Exception e)
             {
-                MessageBox.Show("Kết nối gián đoạn!", "NCR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                //MessageBox.Show(e.Message);
+                MessageBox.Show(e.Message);
             }
             sqlConnection.Close();
             return data;

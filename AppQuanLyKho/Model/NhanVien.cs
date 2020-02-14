@@ -8,6 +8,7 @@ namespace AppQuanLyKho.Model
 {
     class NhanVien
     {
+        private int id;
         private string tenDangNhap;
         private string matKhau;
         private string hoTen;
@@ -17,9 +18,16 @@ namespace AppQuanLyKho.Model
         private bool gioiTinh;
         private string email;
         private bool isActive;
+        private bool isAdmin;
 
-        public NhanVien( string tenDangNhap, string matKhau, string hoTen, string diaChi, string sdt, DateTime ngaySinh, bool gioiTinh, string email, bool isActive)
+        public NhanVien()
         {
+
+        }
+
+        public NhanVien( int id, string tenDangNhap, string matKhau, string hoTen, string diaChi, string sdt, DateTime ngaySinh, bool gioiTinh, string email, bool isActive, bool isAdmin)
+        {
+            this.id = id;
             this.tenDangNhap = tenDangNhap;
             this.matKhau = matKhau;
             this.hoTen = hoTen;
@@ -29,6 +37,7 @@ namespace AppQuanLyKho.Model
             this.gioiTinh = gioiTinh;
             this.email = email;
             this.isActive = isActive;
+            this.isAdmin = isAdmin;
         }
 
         public string TenDangNhap { get => tenDangNhap; set => tenDangNhap = value; }
@@ -40,5 +49,7 @@ namespace AppQuanLyKho.Model
         public bool GioiTinh { get => gioiTinh; set => gioiTinh = value; }
         public string Email { get => email; set => email = value; }
         public bool IsActive { get => isActive; set => isActive = value; }
+        public bool IsAdmin { get => isAdmin; set => isAdmin = value; }
+        public int Id { get => id; set => id = value; }
     }
 }

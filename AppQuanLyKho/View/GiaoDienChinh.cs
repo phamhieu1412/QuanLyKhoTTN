@@ -20,26 +20,26 @@ namespace AppQuanLyKho.View
 
         private void BtnXem_Click(object sender, EventArgs e)
         {
-            dataGridViewListSP.DataSource = GetAllProduct().Tables[0];
+            //dataGridViewListSP.DataSource = GetAllProduct().Tables[0];
         }
 
-        DataSet GetAllProduct()
-        {
-            DataSet data = new DataSet();
+        //DataSet GetAllProduct()
+        //{
+        //    DataSet data = new DataSet();
                 
-            //Sql connection
-            string query = " select * from SanPham";
-            using (SqlConnection connection = new SqlConnection(ConnectionString.connectionString))
-            {
-                connection.Open();
-                SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
-                adapter.Fill(data);
-                connection.Close();
-            }
+        //    //Sql connection
+        //    string query = " select * from SanPham";
+        //    using (SqlConnection connection = new SqlConnection(ConnectionString.connectionString))
+        //    {
+        //        connection.Open();
+        //        SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+        //        adapter.Fill(data);
+        //        connection.Close();
+        //    }
 
 
-            return data;
-        }
+        //    return data;
+        //}
 
         private void ThôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -51,6 +51,12 @@ namespace AppQuanLyKho.View
         {
             DoiMatKhau changepassword = new DoiMatKhau();
             changepassword.ShowDialog();
+        }
+
+        private void QuảnLýToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DanhSachNhanVien dsnv = new DanhSachNhanVien();
+            dsnv.ShowDialog();
         }
     }
 }

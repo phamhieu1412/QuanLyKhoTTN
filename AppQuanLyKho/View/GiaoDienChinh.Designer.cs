@@ -40,10 +40,6 @@
             this.xuấtKhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trợGiúpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridViewListSP = new System.Windows.Forms.DataGridView();
-            this.tbSearch = new System.Windows.Forms.TextBox();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.btnXem = new System.Windows.Forms.Button();
             this.MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HanMucDuTru = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,6 +47,12 @@
             this.DVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tbSearch = new System.Windows.Forms.TextBox();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.btnXem = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListSP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -97,8 +99,9 @@
             // quảnLýToolStripMenuItem
             // 
             this.quảnLýToolStripMenuItem.Name = "quảnLýToolStripMenuItem";
-            this.quảnLýToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.quảnLýToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.quảnLýToolStripMenuItem.Text = "Quản lý ";
+            this.quảnLýToolStripMenuItem.Click += new System.EventHandler(this.QuảnLýToolStripMenuItem_Click);
             // 
             // đăngXuấtToolStripMenuItem
             // 
@@ -156,39 +159,6 @@
             this.dataGridViewListSP.Size = new System.Drawing.Size(596, 287);
             this.dataGridViewListSP.TabIndex = 2;
             // 
-            // tbSearch
-            // 
-            this.tbSearch.Location = new System.Drawing.Point(13, 62);
-            this.tbSearch.Name = "tbSearch";
-            this.tbSearch.Size = new System.Drawing.Size(135, 20);
-            this.tbSearch.TabIndex = 3;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(154, 60);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch.TabIndex = 4;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(483, 63);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(43, 20);
-            this.numericUpDown1.TabIndex = 5;
-            // 
-            // btnXem
-            // 
-            this.btnXem.Location = new System.Drawing.Point(532, 60);
-            this.btnXem.Name = "btnXem";
-            this.btnXem.Size = new System.Drawing.Size(75, 23);
-            this.btnXem.TabIndex = 6;
-            this.btnXem.Text = "Xem";
-            this.btnXem.UseVisualStyleBackColor = true;
-            this.btnXem.Click += new System.EventHandler(this.BtnXem_Click);
-            // 
             // MaSP
             // 
             this.MaSP.DataPropertyName = "MaSP";
@@ -232,14 +202,67 @@
             this.MaLoai.Name = "MaLoai";
             this.MaLoai.Visible = false;
             // 
+            // tbSearch
+            // 
+            this.tbSearch.Location = new System.Drawing.Point(13, 62);
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(135, 20);
+            this.tbSearch.TabIndex = 3;
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Location = new System.Drawing.Point(154, 60);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(75, 23);
+            this.btnTimKiem.TabIndex = 4;
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(483, 63);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(43, 20);
+            this.numericUpDown1.TabIndex = 5;
+            // 
+            // btnXem
+            // 
+            this.btnXem.Location = new System.Drawing.Point(532, 60);
+            this.btnXem.Name = "btnXem";
+            this.btnXem.Size = new System.Drawing.Size(75, 23);
+            this.btnXem.TabIndex = 6;
+            this.btnXem.Text = "Xem";
+            this.btnXem.UseVisualStyleBackColor = true;
+            this.btnXem.Click += new System.EventHandler(this.BtnXem_Click);
+            // 
+            // btnSua
+            // 
+            this.btnSua.Location = new System.Drawing.Point(273, 60);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(75, 23);
+            this.btnSua.TabIndex = 7;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Location = new System.Drawing.Point(354, 60);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(75, 23);
+            this.btnXoa.TabIndex = 8;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            // 
             // GiaoDienChinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(620, 392);
+            this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXem);
             this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.dataGridViewListSP);
             this.Controls.Add(this.menuStrip1);
@@ -270,7 +293,7 @@
         private System.Windows.Forms.ToolStripMenuItem trợGiúpToolStripMenuItem;
         private System.Windows.Forms.DataGridView dataGridViewListSP;
         private System.Windows.Forms.TextBox tbSearch;
-        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button btnXem;
         private System.Windows.Forms.ToolStripMenuItem quảnLýToolStripMenuItem;
@@ -281,5 +304,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn DVT;
         private System.Windows.Forms.DataGridViewTextBoxColumn DonGia;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaLoai;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnXoa;
     }
 }

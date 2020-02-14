@@ -27,10 +27,10 @@ create table PhieuNhap(
 	GhiChu nvarchar(200) ,
 
 	MaNCC varchar(8),
-	TenDN varchar(20),
+	Id int,
 
 	foreign key (MaNCC) references NhaCungCap(MaNCC) on delete cascade,
-	foreign key (TenDN) references NhanVien(TenDN) on delete cascade
+	foreign key (Id) references NhanVien(Id) on delete cascade
 )
 
 create table CT_PhieuNhap(
@@ -59,14 +59,17 @@ create table KhachHang(
 )
 
 create table NhanVien(
-	TenDN varchar(20) primary key,
+	Id int primary key identity,
+	TenDN varchar(20),
 	MatKhau varchar(50),
 	HoTen nvarchar(50) , 
 	DiaChi nvarchar(150),
 	SDT varchar(10),
 	NgaySinh date,
 	GioiTinh bit,
-	Email varchar(30)
+	Email varchar(30),
+	isActive bit,
+	isAdmin bit
 )
 
 create table PhieuXuat(
@@ -75,10 +78,10 @@ create table PhieuXuat(
 	TongTien decimal(18,2),
 	NgayMua date,
 
-	TenDN varchar(20),
+	Id int,
 	MaKH varchar(8),
 
-	foreign key (TenDN) references NhanVien(TenDN) on delete cascade,
+	foreign key (Id) references NhanVien(Id) on delete cascade,
 	foreign key (MaKH) references KhachHang(MaKH) on delete cascade
 )
 
@@ -188,7 +191,7 @@ values('SP001', 'PN001', 50, 450000)
 
 
 insert into PhieuNhap 
-values('PN001', '2018-4-5', 22500000, N'', 'NCC001', 'phamtrunghieu')
+values()
 
 
 /*
@@ -206,8 +209,6 @@ values()
 /*
 nhanvien(tendangnhap , matkhau, hoten ,diachi ,sdt , ngaysinh , gioitinh, email)
 */
-insert into NhanVien 
-values('phamtrunghieu','phamtrunghieu', N'Phạm Trung Hiếu', N'Ngọc Hồi, Huyện Thanh Trì, Hà Nội', '0945874562', '1999-5-6', '1', 'pth@gmail.com')
 /*
 insert into NhanVien 
 values('NV002', N'Nguyễn Thị Ngọc Huyền', N'Số 13B, Ngõ 61/16 Lạc Trung, P. Vinh Tuy, Q. Hai Bà Trưng, Hà Nội', '0954872165', '2000-10-23', 5000000, 6)
@@ -356,10 +357,10 @@ END
 ------------------------------------------------------------------------------------------------------------------
 --THEM NHAN VIEN 
 create PROC THEMNHANVIEN(@TENDN VARCHAR(20), @MATKHAU VARCHAR(50),@HOTEN NVARCHAR(50),
-@DIACHI NVARCHAR(50) , @SDT VARCHAR(10) ,@NGAYSINH DATE, @GIOITINH BIT , @EMAIL VARCHAR(30), @ISACTIVE bit )AS
+@DIACHI NVARCHAR(50) , @SDT VARCHAR(10) ,@NGAYSINH DATE, @GIOITINH BIT , @EMAIL VARCHAR(30), @ISACTIVE bit, @ISADMIN bit)AS
 BEGIN
-	INSERT INTO NhanVien(TenDN ,MatKhau ,Hoten ,DiaChi ,SDT ,NgaySinh ,GioiTinh ,Email, isActive )
-	Values(@TENDN ,@MATKHAU ,@HOTEN ,@DIACHI ,@SDT ,@NGAYSINH ,@GIOITINH ,@EMAIL, @ISACTIVE )
+	INSERT INTO NhanVien(TenDN ,MatKhau ,Hoten ,DiaChi ,SDT ,NgaySinh ,GioiTinh ,Email, isActive, isAdmin )
+	Values(@TENDN ,@MATKHAU ,@HOTEN ,@DIACHI ,@SDT ,@NGAYSINH ,@GIOITINH ,@EMAIL, @ISACTIVE, @ISADMIN )
 END
 
 alter table NhanVien add isActive bit
@@ -371,19 +372,19 @@ select * from PhieuNhap
 select * from CT_PhieuNhap
 delete from CT_PhieuNhap where MaSP = 'PN001'
 --SUA THONG TIN NHAN VIEN
-CREATE PROC SUATHONGTINNHANVIEN( @TENDN VARCHAR(20), @MATKHAU VARCHAR(50),@HOTEN NVARCHAR(50),
-@DIACHI NVARCHAR(50) , @SDT VARCHAR(10) ,@NGAYSINH DATE, @GIOITINH BIT , @EMAIL VARCHAR(30), @ISACTIVE bit )AS
+CREATE PROC SUATHONGTINNHANVIEN(@ID int, @TENDN VARCHAR(20), @MATKHAU VARCHAR(50),@HOTEN NVARCHAR(50),
+@DIACHI NVARCHAR(50) , @SDT VARCHAR(10) ,@NGAYSINH DATE, @GIOITINH BIT , @EMAIL VARCHAR(30), @ISACTIVE bit, @ISADMIN bit )AS
 BEGIN
 	UPDATE NhanVien
 	SET TenDN=@TENDN ,MatKhau=@MATKHAU ,Hoten=@HOTEN ,DiaChi=@DIACHI ,SDT=@SDT ,
-		NgaySinh=@NGAYSINH ,GioiTinh =@GIOITINH ,Email = @EMAIL, isActive = @ISACTIVE 
-	WHERE TenDN=@TENDN 
+		NgaySinh=@NGAYSINH ,GioiTinh =@GIOITINH ,Email = @EMAIL, isActive = @ISACTIVE, isAdmin = @ISADMIN 
+	WHERE Id = @ID
 END
 -- XOA THONG TIN NHAN VIEN
-CREATE PROC XOANHANVIEN(@TENDN VARCHAR(20))AS
+CREATE PROC XOANHANVIEN(@ID int)AS
 BEGIN
 	DELETE FROM NhanVien
-	WHERE TenDN = @TENDN
+	WHERE Id = @ID
 END
 
 --XEM THONG TIN NHAN VIEN
@@ -392,10 +393,10 @@ BEGIN
 	SELECT * FROM NhanVien
 END
 
-CREATE PROC XEMCHITIETNHANVIEN(@TENDN VARCHAR(20)) AS
+CREATE PROC XEMCHITIETNHANVIEN(@ID int) AS
 BEGIN
 	SELECT * FROM NhanVien
-	WHERE TenDN = @TENDN
+	WHERE Id = @ID
 END
 XEMCHITIETNHANVIEN 'phamtrunghieu'
 
