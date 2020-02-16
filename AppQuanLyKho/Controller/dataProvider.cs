@@ -15,6 +15,7 @@ namespace AppQuanLyKho.Controller
 
         public DataTable ExcutiveQuery(string query)
         {
+            if(sqlConnection.State == ConnectionState.Closed)
             sqlConnection.Open();
             DataTable data = new DataTable();
             try
@@ -34,7 +35,9 @@ namespace AppQuanLyKho.Controller
 
         public bool ExcutiveNonQuery(string query)
         {
-            sqlConnection.Open();
+            //ktra trang thai
+            if (sqlConnection.State == ConnectionState.Closed)
+                sqlConnection.Open();
             try
             {
                 SqlCommand cm = new SqlCommand(query, sqlConnection);

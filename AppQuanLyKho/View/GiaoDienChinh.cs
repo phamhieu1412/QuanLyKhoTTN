@@ -13,6 +13,10 @@ namespace AppQuanLyKho.View
 {
     public partial class GiaoDienChinh : Form
     {
+        private bool tsql;
+
+        public bool Tsql { get => tsql; set => tsql = value; }
+
         public GiaoDienChinh()
         {
             InitializeComponent();
@@ -57,6 +61,12 @@ namespace AppQuanLyKho.View
         {
             DanhSachNhanVien dsnv = new DanhSachNhanVien();
             dsnv.ShowDialog();
+        }
+
+        private void GiaoDienChinh_Load(object sender, EventArgs e)
+        {
+
+            quanLyToolStripMenuItem.Visible = tsql;
         }
     }
 }

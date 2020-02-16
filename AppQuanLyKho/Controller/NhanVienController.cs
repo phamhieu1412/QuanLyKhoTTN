@@ -20,7 +20,7 @@ namespace AppQuanLyKho.Controller
 
         public bool Sua(NhanVien nhanVien)
         {
-            string query = string.Format("exec SUATHONGTINNHANVIEN {0}, '{1}', '{2}', '{3}', '{4}', '{5}', {6}, '{7}', '{8}', {9}, {10} ", nhanVien.Id ,nhanVien.TenDangNhap, nhanVien.MatKhau, nhanVien.HoTen, nhanVien.DiaChi, nhanVien.Sdt, nhanVien.NgaySinh, nhanVien.GioiTinh, nhanVien.Email, nhanVien.IsActive, nhanVien.IsAdmin);
+            string query = string.Format("exec SUATHONGTINNHANVIEN {0}, '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', {9}, {10} ", nhanVien.Id, nhanVien.TenDangNhap, nhanVien.MatKhau, nhanVien.HoTen, nhanVien.DiaChi, nhanVien.Sdt, nhanVien.NgaySinh, nhanVien.GioiTinh, nhanVien.Email, nhanVien.IsActive, nhanVien.IsAdmin);
 
             return data.ExcutiveNonQuery(query);
         }
@@ -54,7 +54,7 @@ namespace AppQuanLyKho.Controller
             nv.HoTen = dt.Rows[0]["HoTen"].ToString();
             nv.DiaChi = dt.Rows[0]["DiaChi"].ToString();
             nv.Sdt = dt.Rows[0]["SDT"].ToString();
-            nv.NgaySinh = DateTime.Parse(dt.Rows[0]["NgaySinh"].ToString()) ;
+            nv.NgaySinh = DateTime.Parse(dt.Rows[0]["NgaySinh"].ToString());
             nv.GioiTinh = bool.Parse(dt.Rows[0]["GioiTinh"].ToString());
             nv.Email = dt.Rows[0]["Email"].ToString();
             nv.IsActive = bool.Parse(dt.Rows[0]["isActive"].ToString());
@@ -62,5 +62,6 @@ namespace AppQuanLyKho.Controller
 
             return nv;
         }
+
     }
 }

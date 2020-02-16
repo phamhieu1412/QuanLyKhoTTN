@@ -28,29 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbTenDN = new System.Windows.Forms.Label();
+            this.lable1 = new System.Windows.Forms.Label();
             this.NV_TenDN = new System.Windows.Forms.Label();
             this.NV_Email = new System.Windows.Forms.Label();
-            this.lbEmail = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.NV_SDT = new System.Windows.Forms.Label();
-            this.lbSDT = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.NV_HoTen = new System.Windows.Forms.Label();
-            this.lbHoTen = new System.Windows.Forms.Label();
+            this.lable2 = new System.Windows.Forms.Label();
             this.NV_DiaChi = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.picBAvt = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.NV_Admin = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picBAvt)).BeginInit();
             this.SuspendLayout();
             // 
-            // lbTenDN
+            // lable1
             // 
-            this.lbTenDN.AutoSize = true;
-            this.lbTenDN.Location = new System.Drawing.Point(160, 25);
-            this.lbTenDN.Name = "lbTenDN";
-            this.lbTenDN.Size = new System.Drawing.Size(81, 13);
-            this.lbTenDN.TabIndex = 0;
-            this.lbTenDN.Text = "Tên đăng nhập";
+            this.lable1.AutoSize = true;
+            this.lable1.Location = new System.Drawing.Point(160, 25);
+            this.lable1.Name = "lable1";
+            this.lable1.Size = new System.Drawing.Size(81, 13);
+            this.lable1.TabIndex = 0;
+            this.lable1.Text = "Tên đăng nhập";
             // 
             // NV_TenDN
             // 
@@ -70,14 +70,14 @@
             this.NV_Email.TabIndex = 3;
             this.NV_Email.Text = "...";
             // 
-            // lbEmail
+            // label4
             // 
-            this.lbEmail.AutoSize = true;
-            this.lbEmail.Location = new System.Drawing.Point(160, 100);
-            this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(32, 13);
-            this.lbEmail.TabIndex = 2;
-            this.lbEmail.Text = "Email";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(160, 100);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Email";
             // 
             // NV_SDT
             // 
@@ -88,14 +88,14 @@
             this.NV_SDT.TabIndex = 5;
             this.NV_SDT.Text = "...";
             // 
-            // lbSDT
+            // label3
             // 
-            this.lbSDT.AutoSize = true;
-            this.lbSDT.Location = new System.Drawing.Point(160, 75);
-            this.lbSDT.Name = "lbSDT";
-            this.lbSDT.Size = new System.Drawing.Size(70, 13);
-            this.lbSDT.TabIndex = 4;
-            this.lbSDT.Text = "Số điện thoại";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(160, 75);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Số điện thoại";
             // 
             // NV_HoTen
             // 
@@ -106,14 +106,14 @@
             this.NV_HoTen.TabIndex = 7;
             this.NV_HoTen.Text = "...";
             // 
-            // lbHoTen
+            // lable2
             // 
-            this.lbHoTen.AutoSize = true;
-            this.lbHoTen.Location = new System.Drawing.Point(160, 50);
-            this.lbHoTen.Name = "lbHoTen";
-            this.lbHoTen.Size = new System.Drawing.Size(39, 13);
-            this.lbHoTen.TabIndex = 6;
-            this.lbHoTen.Text = "Họ tên";
+            this.lable2.AutoSize = true;
+            this.lable2.Location = new System.Drawing.Point(160, 50);
+            this.lable2.Name = "lable2";
+            this.lable2.Size = new System.Drawing.Size(39, 13);
+            this.lable2.TabIndex = 6;
+            this.lable2.Text = "Họ tên";
             // 
             // NV_DiaChi
             // 
@@ -124,14 +124,14 @@
             this.NV_DiaChi.TabIndex = 9;
             this.NV_DiaChi.Text = "...";
             // 
-            // label10
+            // label5
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(160, 125);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(40, 13);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "Địa chỉ";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(160, 125);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(40, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Địa chỉ";
             // 
             // picBAvt
             // 
@@ -141,34 +141,35 @@
             this.picBAvt.TabIndex = 10;
             this.picBAvt.TabStop = false;
             // 
-            // textBox1
+            // NV_Admin
             // 
-            this.textBox1.Location = new System.Drawing.Point(322, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 11;
+            this.NV_Admin.Location = new System.Drawing.Point(322, 3);
+            this.NV_Admin.Name = "NV_Admin";
+            this.NV_Admin.ReadOnly = true;
+            this.NV_Admin.Size = new System.Drawing.Size(100, 20);
+            this.NV_Admin.TabIndex = 11;
             // 
             // ThongTinNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(441, 159);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.NV_Admin);
             this.Controls.Add(this.picBAvt);
             this.Controls.Add(this.NV_DiaChi);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.NV_HoTen);
-            this.Controls.Add(this.lbHoTen);
+            this.Controls.Add(this.lable2);
             this.Controls.Add(this.NV_SDT);
-            this.Controls.Add(this.lbSDT);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.NV_Email);
-            this.Controls.Add(this.lbEmail);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.NV_TenDN);
-            this.Controls.Add(this.lbTenDN);
+            this.Controls.Add(this.lable1);
             this.Name = "ThongTinNV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông tin cá nhân";
+            this.Load += new System.EventHandler(this.ThongTinNV_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBAvt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -177,17 +178,17 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lbTenDN;
+        private System.Windows.Forms.Label lable1;
         private System.Windows.Forms.Label NV_TenDN;
         private System.Windows.Forms.Label NV_Email;
-        private System.Windows.Forms.Label lbEmail;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label NV_SDT;
-        private System.Windows.Forms.Label lbSDT;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label NV_HoTen;
-        private System.Windows.Forms.Label lbHoTen;
+        private System.Windows.Forms.Label lable2;
         private System.Windows.Forms.Label NV_DiaChi;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox picBAvt;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox NV_Admin;
     }
 }

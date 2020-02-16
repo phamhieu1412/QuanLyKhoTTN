@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.tbUserName = new System.Windows.Forms.TextBox();
-            this.tbPassword = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnLogIn = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -58,20 +58,20 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "Tên đăng nhập:";
             // 
-            // tbUserName
+            // txtUserName
             // 
-            this.tbUserName.Location = new System.Drawing.Point(111, 82);
-            this.tbUserName.Name = "tbUserName";
-            this.tbUserName.Size = new System.Drawing.Size(164, 20);
-            this.tbUserName.TabIndex = 1;
+            this.txtUserName.Location = new System.Drawing.Point(111, 82);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(164, 20);
+            this.txtUserName.TabIndex = 1;
             // 
-            // tbPassword
+            // txtPassword
             // 
-            this.tbPassword.Location = new System.Drawing.Point(111, 119);
-            this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(164, 20);
-            this.tbPassword.TabIndex = 2;
-            this.tbPassword.UseSystemPasswordChar = true;
+            this.txtPassword.Location = new System.Drawing.Point(111, 119);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(164, 20);
+            this.txtPassword.TabIndex = 2;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // label3
             // 
@@ -120,9 +120,9 @@
             this.Controls.Add(this.cbShowPass);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogIn);
-            this.Controls.Add(this.tbPassword);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.tbUserName);
+            this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "DangNhap";
@@ -138,8 +138,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tbUserName;
-        private System.Windows.Forms.TextBox tbPassword;
+        private System.Windows.Forms.TextBox txtUserName;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnLogIn;
         private System.Windows.Forms.Button btnExit;
