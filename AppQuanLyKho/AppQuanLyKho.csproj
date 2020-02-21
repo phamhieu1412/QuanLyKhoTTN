@@ -67,6 +67,12 @@
     <Compile Include="View\DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\NhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\NhaCungCap.Designer.cs">
+      <DependentUpon>NhaCungCap.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\NhapSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     <EmbeddedResource Include="View\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\NhaCungCap.resx">
+      <DependentUpon>NhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\NhapSanPham.resx">
       <DependentUpon>NhapSanPham.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +167,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="View\NhaCungCap.cs~RF7c6e5cc.TMP" />
+    <None Include="View\NhaCungCap.cs~RFdf81a6.TMP" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
