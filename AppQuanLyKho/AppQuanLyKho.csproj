@@ -81,6 +81,12 @@
     </Compile>
     <Compile Include="Controller\dataProvider.cs" />
     <Compile Include="Model\SanPham.cs" />
+    <Compile Include="View\SuaTTSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SuaTTSanPham.Designer.cs">
+      <DependentUpon>SuaTTSanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\TroGiup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\NhapKho.resx">
       <DependentUpon>NhapKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SuaTTSanPham.resx">
+      <DependentUpon>SuaTTSanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\XuatKho.resx">
       <DependentUpon>XuatKho.cs</DependentUpon>
