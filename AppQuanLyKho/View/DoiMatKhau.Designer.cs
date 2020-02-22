@@ -61,7 +61,7 @@
             this.txtMKMoi.Location = new System.Drawing.Point(152, 65);
             this.txtMKMoi.Name = "txtMKMoi";
             this.txtMKMoi.Size = new System.Drawing.Size(142, 20);
-            this.txtMKMoi.TabIndex = 3;
+            this.txtMKMoi.TabIndex = 1;
             // 
             // label2
             // 
@@ -77,7 +77,7 @@
             this.txtMKMoi1.Location = new System.Drawing.Point(152, 95);
             this.txtMKMoi1.Name = "txtMKMoi1";
             this.txtMKMoi1.Size = new System.Drawing.Size(142, 20);
-            this.txtMKMoi1.TabIndex = 5;
+            this.txtMKMoi1.TabIndex = 2;
             // 
             // label3
             // 
@@ -93,7 +93,7 @@
             this.btnXacNhan.Location = new System.Drawing.Point(152, 124);
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(68, 23);
-            this.btnXacNhan.TabIndex = 6;
+            this.btnXacNhan.TabIndex = 3;
             this.btnXacNhan.Text = "Xác nhận";
             this.btnXacNhan.UseVisualStyleBackColor = true;
             this.btnXacNhan.Click += new System.EventHandler(this.BtnXacNhan_Click);

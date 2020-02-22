@@ -52,6 +52,12 @@ namespace AppQuanLyKho.View
             dsnv.ShowDialog();
         }
 
+        private void NhàCungCấpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NhaCungCap ncc = new NhaCungCap();
+            ncc.ShowDialog();
+        }
+
         private void GiaoDienChinh_Load(object sender, EventArgs e)
         {
             //hieu viet
@@ -168,5 +174,6 @@ namespace AppQuanLyKho.View
                 Labling(middle);
             }
         }
+
     }
 }

@@ -30,6 +30,10 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gbThemMoi = new System.Windows.Forms.GroupBox();
+            this.cbbIsActive = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.dTPNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -66,10 +70,6 @@
             this.isAdmin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbTim = new System.Windows.Forms.TextBox();
             this.btnTim = new System.Windows.Forms.Button();
-            this.txtId = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.cbbIsActive = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.gbThemMoi.SuspendLayout();
             this.gbDanhSach.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDSNV)).BeginInit();
@@ -106,13 +106,47 @@
             this.gbThemMoi.TabStop = false;
             this.gbThemMoi.Text = "Thêm mới";
             // 
+            // cbbIsActive
+            // 
+            this.cbbIsActive.FormattingEnabled = true;
+            this.cbbIsActive.Location = new System.Drawing.Point(67, 303);
+            this.cbbIsActive.Name = "cbbIsActive";
+            this.cbbIsActive.Size = new System.Drawing.Size(141, 21);
+            this.cbbIsActive.TabIndex = 10;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 306);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(44, 13);
+            this.label11.TabIndex = 30;
+            this.label11.Text = "isActive";
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(67, 19);
+            this.txtId.Name = "txtId";
+            this.txtId.ReadOnly = true;
+            this.txtId.Size = new System.Drawing.Size(141, 20);
+            this.txtId.TabIndex = 27;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 22);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(18, 13);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "ID";
+            // 
             // dTPNgaySinh
             // 
             this.dTPNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dTPNgaySinh.Location = new System.Drawing.Point(67, 224);
             this.dTPNgaySinh.Name = "dTPNgaySinh";
             this.dTPNgaySinh.Size = new System.Drawing.Size(141, 20);
-            this.dTPNgaySinh.TabIndex = 14;
+            this.dTPNgaySinh.TabIndex = 7;
             // 
             // label9
             // 
@@ -128,7 +162,7 @@
             this.txtEmail.Location = new System.Drawing.Point(67, 250);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(141, 20);
-            this.txtEmail.TabIndex = 23;
+            this.txtEmail.TabIndex = 8;
             // 
             // label8
             // 
@@ -145,7 +179,7 @@
             this.cbbQuyen.Location = new System.Drawing.Point(67, 276);
             this.cbbQuyen.Name = "cbbQuyen";
             this.cbbQuyen.Size = new System.Drawing.Size(141, 21);
-            this.cbbQuyen.TabIndex = 21;
+            this.cbbQuyen.TabIndex = 9;
             // 
             // label7
             // 
@@ -259,7 +293,7 @@
             this.btnThem.Location = new System.Drawing.Point(12, 360);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(65, 23);
-            this.btnThem.TabIndex = 8;
+            this.btnThem.TabIndex = 11;
             this.btnThem.Text = "Thêm mới";
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.BtnThem_Click);
@@ -269,7 +303,7 @@
             this.btnLuu.Location = new System.Drawing.Point(83, 360);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(68, 23);
-            this.btnLuu.TabIndex = 9;
+            this.btnLuu.TabIndex = 12;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
             this.btnLuu.Click += new System.EventHandler(this.BtnLuu_Click);
@@ -279,7 +313,7 @@
             this.btnXoa.Location = new System.Drawing.Point(157, 360);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(71, 23);
-            this.btnXoa.TabIndex = 10;
+            this.btnXoa.TabIndex = 13;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.BtnXoa_Click);
@@ -403,50 +437,16 @@
             this.tbTim.Location = new System.Drawing.Point(12, 389);
             this.tbTim.Name = "tbTim";
             this.tbTim.Size = new System.Drawing.Size(153, 20);
-            this.tbTim.TabIndex = 12;
+            this.tbTim.TabIndex = 14;
             // 
             // btnTim
             // 
             this.btnTim.Location = new System.Drawing.Point(171, 387);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(57, 23);
-            this.btnTim.TabIndex = 13;
+            this.btnTim.TabIndex = 15;
             this.btnTim.Text = "Tìm";
             this.btnTim.UseVisualStyleBackColor = true;
-            // 
-            // txtId
-            // 
-            this.txtId.Location = new System.Drawing.Point(67, 19);
-            this.txtId.Name = "txtId";
-            this.txtId.ReadOnly = true;
-            this.txtId.Size = new System.Drawing.Size(141, 20);
-            this.txtId.TabIndex = 27;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 22);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(18, 13);
-            this.label10.TabIndex = 28;
-            this.label10.Text = "ID";
-            // 
-            // cbbIsActive
-            // 
-            this.cbbIsActive.FormattingEnabled = true;
-            this.cbbIsActive.Location = new System.Drawing.Point(67, 303);
-            this.cbbIsActive.Name = "cbbIsActive";
-            this.cbbIsActive.Size = new System.Drawing.Size(141, 21);
-            this.cbbIsActive.TabIndex = 29;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 306);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(44, 13);
-            this.label11.TabIndex = 30;
-            this.label11.Text = "isActive";
             // 
             // DanhSachNhanVien
             // 

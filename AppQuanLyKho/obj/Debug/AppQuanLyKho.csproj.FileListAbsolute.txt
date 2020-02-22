@@ -30,3 +30,4 @@ G:\BtapC#\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.NhapKho.resource
 G:\BtapC#\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.PhieuXuat.resources
 G:\BtapC#\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.ThongTinNV.resources
 G:\BtapC#\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.SuaTTSanPham.resources
+G:\BtapC#\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.NhaCungCap.resources

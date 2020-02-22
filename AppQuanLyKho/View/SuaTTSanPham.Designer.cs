@@ -44,7 +44,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(281, 118);
+            this.label4.Location = new System.Drawing.Point(20, 127);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 13);
             this.label4.TabIndex = 9;
@@ -53,7 +53,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(281, 70);
+            this.label7.Location = new System.Drawing.Point(20, 101);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(47, 13);
             this.label7.TabIndex = 10;
@@ -62,7 +62,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 70);
+            this.label2.Location = new System.Drawing.Point(20, 74);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 13);
             this.label2.TabIndex = 11;
@@ -71,7 +71,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(281, 21);
+            this.label5.Location = new System.Drawing.Point(20, 48);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 13);
             this.label5.TabIndex = 12;
@@ -88,45 +88,45 @@
             // 
             // tenSPTb
             // 
-            this.tenSPTb.Location = new System.Drawing.Point(366, 18);
+            this.tenSPTb.Location = new System.Drawing.Point(109, 45);
             this.tenSPTb.Name = "tenSPTb";
             this.tenSPTb.Size = new System.Drawing.Size(130, 20);
-            this.tenSPTb.TabIndex = 4;
+            this.tenSPTb.TabIndex = 2;
             // 
             // maSPTb
             // 
             this.maSPTb.Location = new System.Drawing.Point(109, 18);
             this.maSPTb.Name = "maSPTb";
             this.maSPTb.Size = new System.Drawing.Size(130, 20);
-            this.maSPTb.TabIndex = 5;
+            this.maSPTb.TabIndex = 1;
             // 
             // donViTb
             // 
-            this.donViTb.Location = new System.Drawing.Point(366, 115);
+            this.donViTb.Location = new System.Drawing.Point(109, 124);
             this.donViTb.Name = "donViTb";
             this.donViTb.Size = new System.Drawing.Size(130, 20);
-            this.donViTb.TabIndex = 6;
+            this.donViTb.TabIndex = 5;
             // 
             // donGiaTb
             // 
-            this.donGiaTb.Location = new System.Drawing.Point(366, 67);
+            this.donGiaTb.Location = new System.Drawing.Point(109, 98);
             this.donGiaTb.Name = "donGiaTb";
             this.donGiaTb.Size = new System.Drawing.Size(130, 20);
-            this.donGiaTb.TabIndex = 7;
+            this.donGiaTb.TabIndex = 4;
             // 
             // nuocSXTb
             // 
-            this.nuocSXTb.Location = new System.Drawing.Point(109, 67);
+            this.nuocSXTb.Location = new System.Drawing.Point(109, 71);
             this.nuocSXTb.Name = "nuocSXTb";
             this.nuocSXTb.Size = new System.Drawing.Size(130, 20);
-            this.nuocSXTb.TabIndex = 8;
+            this.nuocSXTb.TabIndex = 3;
             // 
             // btnSuaSP
             // 
-            this.btnSuaSP.Location = new System.Drawing.Point(187, 164);
+            this.btnSuaSP.Location = new System.Drawing.Point(127, 150);
             this.btnSuaSP.Name = "btnSuaSP";
-            this.btnSuaSP.Size = new System.Drawing.Size(122, 23);
-            this.btnSuaSP.TabIndex = 3;
+            this.btnSuaSP.Size = new System.Drawing.Size(93, 23);
+            this.btnSuaSP.TabIndex = 6;
             this.btnSuaSP.Text = "Sửa sản phẩm";
             this.btnSuaSP.UseVisualStyleBackColor = true;
             this.btnSuaSP.Click += new System.EventHandler(this.BtnSuaSP_Click);
@@ -135,7 +135,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 202);
+            this.ClientSize = new System.Drawing.Size(279, 183);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label2);

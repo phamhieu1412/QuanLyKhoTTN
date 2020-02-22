@@ -51,9 +51,6 @@
             this.textBoxSDT = new System.Windows.Forms.TextBox();
             this.textBoxDiaChi = new System.Windows.Forms.TextBox();
             this.btnThem = new System.Windows.Forms.Button();
-            this.btnPrevious = new System.Windows.Forms.Button();
-            this.btnNext = new System.Windows.Forms.Button();
-            this.lblPageNumber = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dGVNCC)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +59,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label9.Location = new System.Drawing.Point(129, 97);
+            this.label9.Location = new System.Drawing.Point(130, 100);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(70, 12);
             this.label9.TabIndex = 46;
@@ -73,7 +70,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label8.Location = new System.Drawing.Point(128, 212);
+            this.label8.Location = new System.Drawing.Point(410, 100);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(294, 12);
             this.label8.TabIndex = 45;
@@ -84,7 +81,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label6.Location = new System.Drawing.Point(128, 270);
+            this.label6.Location = new System.Drawing.Point(409, 154);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(88, 12);
             this.label6.TabIndex = 44;
@@ -103,7 +100,7 @@
             // 
             // btnXoaTam
             // 
-            this.btnXoaTam.Location = new System.Drawing.Point(716, 201);
+            this.btnXoaTam.Location = new System.Drawing.Point(556, 188);
             this.btnXoaTam.Name = "btnXoaTam";
             this.btnXoaTam.Size = new System.Drawing.Size(99, 23);
             this.btnXoaTam.TabIndex = 42;
@@ -114,19 +111,19 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label3.Location = new System.Drawing.Point(307, 18);
+            this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(307, 22);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(213, 36);
+            this.label3.Size = new System.Drawing.Size(171, 33);
             this.label3.TabIndex = 41;
             this.label3.Text = "Nhà Cung Cấp";
             // 
             // textBoxMaNCC
             // 
-            this.textBoxMaNCC.Location = new System.Drawing.Point(131, 74);
+            this.textBoxMaNCC.Location = new System.Drawing.Point(130, 80);
             this.textBoxMaNCC.Name = "textBoxMaNCC";
-            this.textBoxMaNCC.Size = new System.Drawing.Size(501, 20);
+            this.textBoxMaNCC.Size = new System.Drawing.Size(185, 20);
             this.textBoxMaNCC.TabIndex = 40;
             // 
             // dGVNCC
@@ -139,10 +136,10 @@
             this.TenNCC,
             this.DiaChi,
             this.DienThoai});
-            this.dGVNCC.Location = new System.Drawing.Point(14, 285);
+            this.dGVNCC.Location = new System.Drawing.Point(14, 237);
             this.dGVNCC.Name = "dGVNCC";
             this.dGVNCC.ReadOnly = true;
-            this.dGVNCC.Size = new System.Drawing.Size(898, 238);
+            this.dGVNCC.Size = new System.Drawing.Size(735, 238);
             this.dGVNCC.TabIndex = 39;
             // 
             // MaNCC
@@ -180,7 +177,7 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(785, 143);
+            this.btnXoa.Location = new System.Drawing.Point(346, 188);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(99, 23);
             this.btnXoa.TabIndex = 38;
@@ -190,7 +187,7 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(785, 76);
+            this.btnSua.Location = new System.Drawing.Point(241, 188);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(99, 23);
             this.btnSua.TabIndex = 37;
@@ -200,7 +197,7 @@
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.Location = new System.Drawing.Point(654, 143);
+            this.btnTimKiem.Location = new System.Drawing.Point(451, 188);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(99, 23);
             this.btnTimKiem.TabIndex = 36;
@@ -211,7 +208,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(40, 247);
+            this.label7.Location = new System.Drawing.Point(340, 134);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(62, 13);
             this.label7.TabIndex = 32;
@@ -220,7 +217,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(58, 192);
+            this.label2.Location = new System.Drawing.Point(340, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 33;
@@ -229,7 +226,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(19, 138);
+            this.label5.Location = new System.Drawing.Point(26, 134);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(102, 13);
             this.label5.TabIndex = 34;
@@ -238,7 +235,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 81);
+            this.label1.Location = new System.Drawing.Point(26, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 13);
             this.label1.TabIndex = 35;
@@ -246,28 +243,28 @@
             // 
             // textBoxTenNCC
             // 
-            this.textBoxTenNCC.Location = new System.Drawing.Point(131, 131);
+            this.textBoxTenNCC.Location = new System.Drawing.Point(130, 130);
             this.textBoxTenNCC.Name = "textBoxTenNCC";
-            this.textBoxTenNCC.Size = new System.Drawing.Size(501, 20);
+            this.textBoxTenNCC.Size = new System.Drawing.Size(185, 20);
             this.textBoxTenNCC.TabIndex = 29;
             // 
             // textBoxSDT
             // 
-            this.textBoxSDT.Location = new System.Drawing.Point(130, 244);
+            this.textBoxSDT.Location = new System.Drawing.Point(410, 130);
             this.textBoxSDT.Name = "textBoxSDT";
-            this.textBoxSDT.Size = new System.Drawing.Size(501, 20);
+            this.textBoxSDT.Size = new System.Drawing.Size(292, 20);
             this.textBoxSDT.TabIndex = 30;
             // 
             // textBoxDiaChi
             // 
-            this.textBoxDiaChi.Location = new System.Drawing.Point(131, 189);
+            this.textBoxDiaChi.Location = new System.Drawing.Point(410, 80);
             this.textBoxDiaChi.Name = "textBoxDiaChi";
-            this.textBoxDiaChi.Size = new System.Drawing.Size(501, 20);
+            this.textBoxDiaChi.Size = new System.Drawing.Size(291, 20);
             this.textBoxDiaChi.TabIndex = 31;
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(654, 76);
+            this.btnThem.Location = new System.Drawing.Point(136, 188);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(99, 23);
             this.btnThem.TabIndex = 28;
@@ -275,43 +272,11 @@
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // btnPrevious
-            // 
-            this.btnPrevious.Location = new System.Drawing.Point(329, 529);
-            this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(75, 23);
-            this.btnPrevious.TabIndex = 47;
-            this.btnPrevious.Text = "<<";
-            this.btnPrevious.UseVisualStyleBackColor = true;
-            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
-            // 
-            // btnNext
-            // 
-            this.btnNext.Location = new System.Drawing.Point(513, 529);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(75, 23);
-            this.btnNext.TabIndex = 48;
-            this.btnNext.Text = ">>";
-            this.btnNext.UseVisualStyleBackColor = true;
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            // 
-            // lblPageNumber
-            // 
-            this.lblPageNumber.AutoSize = true;
-            this.lblPageNumber.Location = new System.Drawing.Point(436, 534);
-            this.lblPageNumber.Name = "lblPageNumber";
-            this.lblPageNumber.Size = new System.Drawing.Size(41, 13);
-            this.lblPageNumber.TabIndex = 49;
-            this.lblPageNumber.Text = "label10";
-            // 
             // NhaCungCap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(927, 561);
-            this.Controls.Add(this.lblPageNumber);
-            this.Controls.Add(this.btnNext);
-            this.Controls.Add(this.btnPrevious);
+            this.ClientSize = new System.Drawing.Size(770, 488);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
@@ -365,8 +330,5 @@
         private System.Windows.Forms.TextBox textBoxSDT;
         private System.Windows.Forms.TextBox textBoxDiaChi;
         private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Button btnPrevious;
-        private System.Windows.Forms.Button btnNext;
-        private System.Windows.Forms.Label lblPageNumber;
     }
 }
