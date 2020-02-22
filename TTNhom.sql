@@ -1,6 +1,8 @@
 ﻿use TTN_QLKho
 go
 
+drop database TTN_QLKho
+
 create table Loai(
 	MaLoai varchar(8) primary key,
 	TenLoai nvarchar(150) ,
@@ -494,3 +496,83 @@ BEGIN
 	WHERE MaPX = @MAPX
 END
 
+CREATE PROC THEMNHACUNGCAP (@MANCC VARCHAR(8),@TENNCC NVARCHAR(150),@DIACHI NVARCHAR(150) ,@SDT VARCHAR(11))AS
+BEGIN 
+	INSERT INTO NhaCungCap(MaNCC,TenNCC,DiaChi, DienThoai)
+	values(@MANCC,@TENNCC,@DIACHI,@SDT)
+END
+
+Create proc XEMNHACUNGCAP AS
+BEGIN
+	SELECT * FROM NhaCungCap
+END
+
+create proc XEMCHITIETNHACUNGCAP(@MANCC VARCHAR(8))AS
+BEGIN
+	SELECT * FROM NhaCungCap
+	WHERE MaNCC = @MANCC
+END
+
+XEMCHITIETNHACUNGCAP 'NCC001'
+
+
+create proc SUANHACUNGCAP(@MANCC VARCHAR(8),@TENNCC NVARCHAR(150),@DIACHI NVARCHAR(150) ,@SDT VARCHAR(11))AS
+BEGIN
+	UPDATE NhaCungCap
+	SET MaNCC=@MANCC,TenNCC=@TENNCC,DiaChi=@DIACHI, DienThoai=@SDT
+	WHERE  MaNCC=@MANCC
+END
+
+CREATE PROC XOANHACUNGCAP(@MANCC VARCHAR(8))AS
+BEGIN 
+	DELETE FROM NhaCungCap
+	WHERE  MaNCC=@MANCC
+END
+
+with NhaCungCap as (
+	select ROW_Number() Over (Order by MaNCC asc) as
+	rownum,MaNCC,TenNCC,DiaChi, DienThoai 
+	from NhaCungCap
+)
+
+select *from NhaCungCap
+where rownum>=1 and rownum <=4
+
+
+
+
+alter PROCEDURE Pagination
+ @page INT,
+ @size INT,
+ @totalrow INT  OUTPUT
+AS
+BEGIN
+    DECLARE @offset INT
+    DECLARE @newsize INT
+    DECLARE @sql NVARCHAR(MAX)
+
+    IF(@page=0)
+      BEGIN
+        SET @offset = @page
+        SET @newsize = @size
+       END
+    ELSE 
+      BEGIN
+        SET @offset = @page*@size
+        SET @newsize = @size-1
+      END
+    SET NOCOUNT ON
+    SET @sql = '
+    with NhaCungCap as (
+	select ROW_Number() Over (Order by MaNCC asc) as
+	rownum,MaNCC,TenNCC,DiaChi, DienThoai 
+	from NhaCungCap
+	)
+  select *from NhaCungCap
+	where rownum>=1 and rownum <=4 ' 
+   EXECUTE (@sql)
+   SET @totalrow = (SELECT COUNT(*) FROM NhaCungCap)
+END
+
+
+Pagination '0', '4' ,'30'
