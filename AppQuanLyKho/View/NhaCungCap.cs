@@ -24,7 +24,7 @@ namespace AppQuanLyKho.View
         {
             InitializeComponent();
         }
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-7EOTJ4J;Initial Catalog=TTN_QLKho;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-HKOJN4O;Initial Catalog=TTN_QLKho;Integrated Security=True");
 
         //pagination lỗi mãi ko fix dc chán ko buồn làm
         /*public async Task<IPagedList<NhaCungCap>> GetPagedListAsync(int pageNumber =1 , int pageSize =10) {
@@ -133,10 +133,10 @@ namespace AppQuanLyKho.View
                 cmd.Parameters.AddWithValue("@DIACHI", textBoxDiaChi.Text);
                 cmd.Parameters.AddWithValue("@SDT", textBoxSDT.Text);
 
-                textBoxMaNCC.Text = textBoxMaNCC.Text.Trim();
-                textBoxTenNCC.Text = textBoxTenNCC.Text.Trim();
-                textBoxDiaChi.Text = textBoxDiaChi.Text.Trim();
-                textBoxSDT.Text = textBoxSDT.Text.Trim();
+                //textBoxMaNCC.Text = textBoxMaNCC.Text.Trim();
+                //textBoxTenNCC.Text = textBoxTenNCC.Text.Trim();
+                //textBoxDiaChi.Text = textBoxDiaChi.Text.Trim();
+                //textBoxSDT.Text = textBoxSDT.Text.Trim();
 
 
                 

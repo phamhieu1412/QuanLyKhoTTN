@@ -48,3 +48,4 @@ C:\Users\admin\source\repos\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.Vie
 C:\Users\admin\source\repos\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.csproj.GenerateResource.cache
 C:\Users\admin\source\repos\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.exe
 C:\Users\admin\source\repos\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.pdb
+G:\BtapC#\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.NhaCungCap.resources
