@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
+
+
 //using PagedList;
 
 namespace AppQuanLyKho.View
@@ -103,6 +106,19 @@ namespace AppQuanLyKho.View
             catch (Exception)
             { }
         }
+        
+        public void XoaKiTuTrangOGiua(string s)
+        {
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] == ' ' && s[i + 1] == ' ')
+                {
+                    s = s.Substring(i, i + 1);
+                    i--;
+                }
+            }
+        }
+
 
         private void btnThem_Click(object sender, EventArgs e)
         {
@@ -116,14 +132,50 @@ namespace AppQuanLyKho.View
                 cmd.Parameters.AddWithValue("@TENNCC", textBoxTenNCC.Text);
                 cmd.Parameters.AddWithValue("@DIACHI", textBoxDiaChi.Text);
                 cmd.Parameters.AddWithValue("@SDT", textBoxSDT.Text);
-                if (textBoxSDT.Text.Length > 11)
+
+                textBoxMaNCC.Text = textBoxMaNCC.Text.Trim();
+                textBoxTenNCC.Text = textBoxTenNCC.Text.Trim();
+                textBoxDiaChi.Text = textBoxDiaChi.Text.Trim();
+                textBoxSDT.Text = textBoxSDT.Text.Trim();
+
+
+                
+
+                // kiem tra xem no co toan khoang trang khong
+                bool matchMANCC = Regex.IsMatch(textBoxMaNCC.Text, @"^\s");
+                bool matchTENNCC = Regex.IsMatch(textBoxTenNCC.Text, @"^\s");
+                bool matchDIACHI = Regex.IsMatch(textBoxDiaChi.Text, @"^\s");
+                bool matchSDT = Regex.IsMatch(textBoxSDT.Text, @"^\s");
+
+                if (matchMANCC || matchTENNCC || matchSDT || matchDIACHI)
                 {
-                    MessageBox.Show("Toi da 11 ki tu ");
+                    MessageBox.Show("khong nhap toan khoang trang");
+                }
+                else
+                if (textBoxMaNCC.Text.Length > 8)
+                {
+                    MessageBox.Show("Ma nha cung cap toi da 8 ki tu ");
+                }
+                else if (textBoxSDT.Text.Length > 11)
+                {
+                    MessageBox.Show("SDT toi da 11 ki tu ");
                 }
                 else
                 {
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Them ban ghi moi thanh cong");
+
+                    try
+                    {
+                        XoaKiTuTrangOGiua(textBoxMaNCC.Text);
+                        XoaKiTuTrangOGiua(textBoxTenNCC.Text);
+                        XoaKiTuTrangOGiua(textBoxDiaChi.Text);
+                        XoaKiTuTrangOGiua(textBoxSDT.Text);
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("Them ban ghi moi thanh cong");
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Trùng Mã Nhà Cung Cấp");
+                    }
                     con.Close();
                     KetNoiDatabase();
                     XoaData();
@@ -149,12 +201,40 @@ namespace AppQuanLyKho.View
                 cmd.Parameters.AddWithValue("@TENNCC", textBoxTenNCC.Text);
                 cmd.Parameters.AddWithValue("@DIACHI", textBoxDiaChi.Text);
                 cmd.Parameters.AddWithValue("@SDT", textBoxSDT.Text);
-                cmd.ExecuteNonQuery();
-                con.Close();
-                MessageBox.Show("Sua ban ghi thanh cong");
-                KetNoiDatabase();
-                XoaData();
-                LoadDataFromDataGridToTextBox();
+
+                textBoxMaNCC.Text.Trim();
+                textBoxTenNCC.Text.Trim();
+                textBoxDiaChi.Text.Trim();
+                textBoxSDT.Text.Trim();
+
+                // kiem tra xem no co toan khoang trang khong
+                bool matchMANCC = Regex.IsMatch(textBoxMaNCC.Text, @"^\s");
+                bool matchTENNCC = Regex.IsMatch(textBoxTenNCC.Text, @"^\s");
+                bool matchDIACHI = Regex.IsMatch(textBoxDiaChi.Text, @"^\s");
+                bool matchSDT = Regex.IsMatch(textBoxSDT.Text, @"^\s");
+
+                if (matchMANCC || matchTENNCC || matchSDT || matchDIACHI)
+                {
+                    MessageBox.Show("khong chi toan khoang trang");
+                }
+                else if (textBoxMaNCC.Text.Length > 8)
+                {
+                    MessageBox.Show("Ma nha cung cap toi da 8 ki tu ");
+                }
+                else if (textBoxSDT.Text.Length > 11)
+                {
+                    MessageBox.Show("SDT toi da 11 ki tu ");
+                }
+                else
+                {
+                    
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("Sua ban ghi thanh cong");
+                    KetNoiDatabase();
+                    XoaData();
+                    LoadDataFromDataGridToTextBox();
+                }
             }
             else
             {
