@@ -48,7 +48,10 @@
   <ItemGroup>
     <Compile Include="Controller\DangNhapController.cs" />
     <Compile Include="Controller\NhanVienController.cs" />
+    <Compile Include="Controller\SanPhamController.cs" />
+    <Compile Include="Model\DanhSachSP_PN.cs" />
     <Compile Include="Model\NhanVien.cs" />
+    <Compile Include="Model\PhieuNhap.cs" />
     <Compile Include="View\DanhSachNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +69,12 @@
     </Compile>
     <Compile Include="View\DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Loai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Loai.Designer.cs">
+      <DependentUpon>Loai.cs</DependentUpon>
     </Compile>
     <Compile Include="View\NhaCungCap.cs">
       <SubType>Form</SubType>
@@ -127,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Loai.resx">
+      <DependentUpon>Loai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\NhaCungCap.resx">
       <DependentUpon>NhaCungCap.cs</DependentUpon>

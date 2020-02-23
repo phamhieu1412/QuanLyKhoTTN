@@ -12,10 +12,10 @@ namespace AppQuanLyKho.Model
         private string tenSanPham;
         private int hamMucDuTru;
         private string nuocSanXuat;
-        private int donGia;
+        private decimal donGia;
         private string donVi;
         private string phanLoai;
-        public SanPham(string maSanPham, string tenSanPham, int hamMucDuTru, string nuocSanXuat, int donGia, string donVi, string phanLoai)
+        public SanPham(string maSanPham, string tenSanPham, int hamMucDuTru, string nuocSanXuat, decimal donGia, string donVi, string phanLoai)
         {
             this.maSanPham = maSanPham;
             this.tenSanPham = tenSanPham;
@@ -30,7 +30,7 @@ namespace AppQuanLyKho.Model
         public string TenSanPham { get => tenSanPham; set => tenSanPham = value; }
         public int HamMucDuTru { get => hamMucDuTru; set => hamMucDuTru = value; }
         public string NuocSanXuat { get => nuocSanXuat; set => nuocSanXuat = value; }
-        public int DonGia { get => donGia; set => donGia = value; }
+        public decimal DonGia { get => donGia; set => donGia = value; }
         public string DonVi { get => donVi; set => donVi = value; }
         public string PhanLoai { get => phanLoai; set => phanLoai = value; }
     }

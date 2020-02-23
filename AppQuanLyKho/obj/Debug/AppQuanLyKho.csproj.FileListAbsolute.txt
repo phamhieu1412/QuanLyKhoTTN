@@ -31,3 +31,4 @@ G:\BtapC#\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.PhieuXuat.resour
 G:\BtapC#\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.ThongTinNV.resources
 G:\BtapC#\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.SuaTTSanPham.resources
 G:\BtapC#\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.NhaCungCap.resources
+G:\BtapC#\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.Loai.resources

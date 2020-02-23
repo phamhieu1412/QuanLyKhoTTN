@@ -38,6 +38,7 @@
             this.nghiệpVụToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nhậpKhoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.xuấtKhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nhàCungCấpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trợGiúpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.index3Lb = new System.Windows.Forms.Label();
             this.index5Lb = new System.Windows.Forms.Label();
@@ -50,7 +51,6 @@
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.tbSearch = new System.Windows.Forms.TextBox();
             this.dataGridViewListSP = new System.Windows.Forms.DataGridView();
-            this.nhàCungCấpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListSP)).BeginInit();
             this.SuspendLayout();
@@ -127,12 +127,20 @@
             this.nhậpKhoToolStripMenuItem1.Name = "nhậpKhoToolStripMenuItem1";
             this.nhậpKhoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.nhậpKhoToolStripMenuItem1.Text = "Nhập kho";
+            this.nhậpKhoToolStripMenuItem1.Click += new System.EventHandler(this.NhậpKhoToolStripMenuItem1_Click);
             // 
             // xuấtKhoToolStripMenuItem
             // 
             this.xuấtKhoToolStripMenuItem.Name = "xuấtKhoToolStripMenuItem";
             this.xuấtKhoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.xuấtKhoToolStripMenuItem.Text = "Xuất kho";
+            // 
+            // nhàCungCấpToolStripMenuItem
+            // 
+            this.nhàCungCấpToolStripMenuItem.Name = "nhàCungCấpToolStripMenuItem";
+            this.nhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nhàCungCấpToolStripMenuItem.Text = "Nhà cung cấp";
+            this.nhàCungCấpToolStripMenuItem.Click += new System.EventHandler(this.NhàCungCấpToolStripMenuItem_Click);
             // 
             // trợGiúpToolStripMenuItem
             // 
@@ -244,13 +252,6 @@
             this.dataGridViewListSP.Name = "dataGridViewListSP";
             this.dataGridViewListSP.Size = new System.Drawing.Size(596, 243);
             this.dataGridViewListSP.TabIndex = 22;
-            // 
-            // nhàCungCấpToolStripMenuItem
-            // 
-            this.nhàCungCấpToolStripMenuItem.Name = "nhàCungCấpToolStripMenuItem";
-            this.nhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.nhàCungCấpToolStripMenuItem.Text = "Nhà cung cấp";
-            this.nhàCungCấpToolStripMenuItem.Click += new System.EventHandler(this.NhàCungCấpToolStripMenuItem_Click);
             // 
             // GiaoDienChinh
             // 

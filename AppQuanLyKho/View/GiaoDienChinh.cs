@@ -175,5 +175,10 @@ namespace AppQuanLyKho.View
             }
         }
 
+        private void NhậpKhoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            NhapKho nk = new NhapKho();
+            nk.ShowDialog();
+        }
     }
 }
