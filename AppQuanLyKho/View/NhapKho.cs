@@ -30,7 +30,7 @@ namespace AppQuanLyKho.View
         private string ngaynhap;
         private string ghichu;
         private decimal tongtien;
-        private string tenDN;
+        private int id;
 
         private bool xoaColumn = true;
         private bool suaSP = false;
@@ -44,10 +44,10 @@ namespace AppQuanLyKho.View
             getSP();
             //==============================
             //maPN = tbMaPN.Text.ToString();
-            maPN = "1";
+            maPN = "PN014";
             //==============================
             //tenDN = tbTenNV.Text.ToString();
-            tenDN = "1";
+            //id = 1;
             ngaynhap = DateTime.Now.ToString("yyyy-MM-dd");
             Console.WriteLine(ngaynhap);
 
@@ -57,7 +57,7 @@ namespace AppQuanLyKho.View
         {
             ncc = data.GetDanhSachNhaCungCap();
             ncc.Add("Thêm mới");
-            comboBoxTenNCC.DataSource = ncc;
+            comboBoxNCC.DataSource = ncc;
         }
         public void getSP()
         {
@@ -116,7 +116,7 @@ namespace AppQuanLyKho.View
         private void BtnThem_Click(object sender, EventArgs e)
         {
             getdata();
-            if (comboBoxTenSP.Text.ToString() == "Chọn sản phẩm" || comboBoxTenNCC.Text.ToString() == "Chọn nhà cung cấp" || comboBoxTenSP.Text.ToString() == "Thêm mới" || comboBoxTenNCC.Text.ToString() == "Thêm mới")
+            if (comboBoxTenSP.Text.ToString() == "Chọn sản phẩm" || comboBoxNCC.Text.ToString() == "Chọn nhà cung cấp" || comboBoxTenSP.Text.ToString() == "Thêm mới" || comboBoxNCC.Text.ToString() == "Thêm mới")
             {
                 MessageBox.Show("Vui lòng chọn đầy đủ nhà cung cấp và sản phẩm");
             }
@@ -216,11 +216,11 @@ namespace AppQuanLyKho.View
 
         private void BtnLuu_Click(object sender, EventArgs e)
         {
-            string query = string.Format("THEMPHIEUNHAP '{0}', '{1}', '{2}', N'{3}', '{4}', '{5}'", maPN, ngaynhap, tongtien, ghichu, maNCC, tenDN);
+            string query = string.Format("THEMPHIEUNHAP '{0}', '{1}', {2}, N'{3}', '{4}', {5} ", maPN, ngaynhap, tongtien, ghichu, maNCC, id);
             data.ExcutiveNonQuery(query);
             foreach (DanhSachSP_PN item in ds)
             {
-                string s = string.Format("THEMCTPHIEUNHAP '{0}', '{1}', '{2}', '{3}'", item.Masp, item.Mapn, item.Soluong, item.Dongia);
+                string s = string.Format("THEMCTPHIEUNHAP '{0}', '{1}', {2}, {3}", item.Masp, item.Mapn, item.Soluong, item.Dongia);
                 data.ExcutiveNonQuery(s);
             }
         }

@@ -300,7 +300,19 @@ END
 XOASANPHAM 'SP001'
 
 ----------------------------------------------------------------------------------------------------------------
+create proc THEMCTPHIEUNHAP(@masp varchar(8), @mapn varchar(8), @soluong int, @dongia decimal)
+as
+    begin
+        insert into CT_PhieuNhap(MaSP,MaPN,SoLuong,DonGia)
+        values(@masp,@mapn,@soluong,@dongia)
+    end
 
+create proc THEMPHIEUNHAP(@mapn varchar(8), @ngaynhap date, @tongtien decimal, @ghichu nvarchar(200), @mancc varchar(8), @id int)
+as
+    begin
+        insert into PhieuNhap(MaPN,NgayNhap,TongTien,GhiChu,MaNCC,Id)
+        values(@mapn,@ngaynhap,@tongtien,@ghichu,@mancc,@id)
+    end
 -- TAO THU TUC THEM HANG
 CREATE PROC THEMHANGVAOPHIEUNHAP (@MAPN VARCHAR(8) ,@MASP VARCHAR(8), @NGAYNHAP DATE , @TONGTIEN DECIMAL(18,2),
 @GHICHU NVARCHAR(200) ,@MANHACUNGCAP VARCHAR(8) ,@SOLUONG INT , @DONGIA DECIMAL(18,2), @ID int )

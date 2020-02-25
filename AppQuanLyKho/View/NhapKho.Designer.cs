@@ -45,7 +45,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxMaNCC = new System.Windows.Forms.TextBox();
-            this.comboBoxTenNCC = new System.Windows.Forms.ComboBox();
             this.comboBoxNCC = new System.Windows.Forms.ComboBox();
             this.comboBoxTenSP = new System.Windows.Forms.ComboBox();
             this.btnThem = new System.Windows.Forms.Button();
@@ -53,9 +52,11 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.gbTTSP = new System.Windows.Forms.GroupBox();
+            this.textBoxNSX = new System.Windows.Forms.TextBox();
             this.textBoxDVT = new System.Windows.Forms.TextBox();
             this.textBoxLoai = new System.Windows.Forms.TextBox();
-            this.textBoxNSX = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSanPham)).BeginInit();
             this.gbDSSP.SuspendLayout();
             this.gbTTSP.SuspendLayout();
@@ -155,7 +156,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 55);
+            this.label3.Location = new System.Drawing.Point(16, 85);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 13);
             this.label3.TabIndex = 3;
@@ -163,7 +164,7 @@
             // 
             // textBoxDonGia
             // 
-            this.textBoxDonGia.Location = new System.Drawing.Point(99, 52);
+            this.textBoxDonGia.Location = new System.Drawing.Point(99, 112);
             this.textBoxDonGia.Name = "textBoxDonGia";
             this.textBoxDonGia.Size = new System.Drawing.Size(134, 20);
             this.textBoxDonGia.TabIndex = 4;
@@ -171,7 +172,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 85);
+            this.label4.Location = new System.Drawing.Point(16, 115);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 13);
             this.label4.TabIndex = 5;
@@ -187,11 +188,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 115);
+            this.label5.Location = new System.Drawing.Point(293, 115);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 13);
+            this.label5.Size = new System.Drawing.Size(60, 13);
             this.label5.TabIndex = 7;
-            this.label5.Text = "Mã ĐVT";
+            this.label5.Text = "Đơn vị tính";
             // 
             // label6
             // 
@@ -204,18 +205,11 @@
             // 
             // textBoxMaNCC
             // 
-            this.textBoxMaNCC.Location = new System.Drawing.Point(385, 52);
+            this.textBoxMaNCC.Location = new System.Drawing.Point(99, 52);
             this.textBoxMaNCC.Name = "textBoxMaNCC";
-            this.textBoxMaNCC.Size = new System.Drawing.Size(199, 20);
+            this.textBoxMaNCC.ReadOnly = true;
+            this.textBoxMaNCC.Size = new System.Drawing.Size(134, 20);
             this.textBoxMaNCC.TabIndex = 10;
-            // 
-            // comboBoxTenNCC
-            // 
-            this.comboBoxTenNCC.FormattingEnabled = true;
-            this.comboBoxTenNCC.Location = new System.Drawing.Point(99, 112);
-            this.comboBoxTenNCC.Name = "comboBoxTenNCC";
-            this.comboBoxTenNCC.Size = new System.Drawing.Size(134, 21);
-            this.comboBoxTenNCC.TabIndex = 12;
             // 
             // comboBoxNCC
             // 
@@ -231,7 +225,7 @@
             this.comboBoxTenSP.FormattingEnabled = true;
             this.comboBoxTenSP.Location = new System.Drawing.Point(385, 22);
             this.comboBoxTenSP.Name = "comboBoxTenSP";
-            this.comboBoxTenSP.Size = new System.Drawing.Size(199, 21);
+            this.comboBoxTenSP.Size = new System.Drawing.Size(144, 21);
             this.comboBoxTenSP.TabIndex = 14;
             this.comboBoxTenSP.SelectedIndexChanged += new System.EventHandler(this.ComboBoxTenSP_SelectedIndexChanged);
             // 
@@ -258,7 +252,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(16, 25);
+            this.label8.Location = new System.Drawing.Point(18, 55);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(47, 13);
             this.label8.TabIndex = 19;
@@ -269,12 +263,14 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(293, 25);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(74, 13);
+            this.label10.Size = new System.Drawing.Size(78, 13);
             this.label10.TabIndex = 22;
-            this.label10.Text = "Mã Sản Phẩm";
+            this.label10.Text = "Tên Sản Phẩm";
             // 
             // gbTTSP
             // 
+            this.gbTTSP.Controls.Add(this.label11);
+            this.gbTTSP.Controls.Add(this.label9);
             this.gbTTSP.Controls.Add(this.textBoxNSX);
             this.gbTTSP.Controls.Add(this.textBoxDVT);
             this.gbTTSP.Controls.Add(this.textBoxLoai);
@@ -284,7 +280,6 @@
             this.gbTTSP.Controls.Add(this.btnThem);
             this.gbTTSP.Controls.Add(this.comboBoxTenSP);
             this.gbTTSP.Controls.Add(this.comboBoxNCC);
-            this.gbTTSP.Controls.Add(this.comboBoxTenNCC);
             this.gbTTSP.Controls.Add(this.textBoxMaNCC);
             this.gbTTSP.Controls.Add(this.label6);
             this.gbTTSP.Controls.Add(this.label5);
@@ -299,26 +294,44 @@
             this.gbTTSP.TabStop = false;
             this.gbTTSP.Text = "Thông tin sản phẩm";
             // 
+            // textBoxNSX
+            // 
+            this.textBoxNSX.Location = new System.Drawing.Point(385, 52);
+            this.textBoxNSX.Name = "textBoxNSX";
+            this.textBoxNSX.Size = new System.Drawing.Size(144, 20);
+            this.textBoxNSX.TabIndex = 25;
+            // 
             // textBoxDVT
             // 
-            this.textBoxDVT.Location = new System.Drawing.Point(395, 115);
+            this.textBoxDVT.Location = new System.Drawing.Point(385, 112);
             this.textBoxDVT.Name = "textBoxDVT";
-            this.textBoxDVT.Size = new System.Drawing.Size(134, 20);
+            this.textBoxDVT.Size = new System.Drawing.Size(144, 20);
             this.textBoxDVT.TabIndex = 24;
             // 
             // textBoxLoai
             // 
-            this.textBoxLoai.Location = new System.Drawing.Point(395, 85);
+            this.textBoxLoai.Location = new System.Drawing.Point(385, 82);
             this.textBoxLoai.Name = "textBoxLoai";
-            this.textBoxLoai.Size = new System.Drawing.Size(134, 20);
+            this.textBoxLoai.Size = new System.Drawing.Size(144, 20);
             this.textBoxLoai.TabIndex = 23;
             // 
-            // textBoxNSX
+            // label9
             // 
-            this.textBoxNSX.Location = new System.Drawing.Point(234, 84);
-            this.textBoxNSX.Name = "textBoxNSX";
-            this.textBoxNSX.Size = new System.Drawing.Size(134, 20);
-            this.textBoxNSX.TabIndex = 25;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(18, 25);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(54, 13);
+            this.label9.TabIndex = 26;
+            this.label9.Text = "Tên  NCC";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(293, 85);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(45, 13);
+            this.label11.TabIndex = 27;
+            this.label11.Text = "Tên loại";
             // 
             // NhapKho
             // 
@@ -365,7 +378,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBoxMaNCC;
-        private System.Windows.Forms.ComboBox comboBoxTenNCC;
         private System.Windows.Forms.ComboBox comboBoxNCC;
         private System.Windows.Forms.ComboBox comboBoxTenSP;
         private System.Windows.Forms.Button btnThem;
@@ -376,5 +388,7 @@
         private System.Windows.Forms.TextBox textBoxDVT;
         private System.Windows.Forms.TextBox textBoxLoai;
         private System.Windows.Forms.TextBox textBoxNSX;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label11;
     }
 }
