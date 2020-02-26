@@ -46,6 +46,7 @@ namespace AppQuanLyKho.View
 
                 txtUserName.Text = "";
                 txtPassword.Text = "";
+                cbShowPass.Checked = false;
             }
 
         }
@@ -63,6 +64,17 @@ namespace AppQuanLyKho.View
             }
         }
 
+        private void CbShowPass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbShowPass.Checked)
+            {
+                txtPassword.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtPassword.UseSystemPasswordChar = true;
+            }
 
+        }
     }
 }

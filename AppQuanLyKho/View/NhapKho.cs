@@ -44,13 +44,24 @@ namespace AppQuanLyKho.View
             getSP();
             //==============================
             //maPN = tbMaPN.Text.ToString();
-            maPN = "PN014";
+            maPN = "PN016";
             //==============================
             //tenDN = tbTenNV.Text.ToString();
-            //id = 1;
+            id = 1;
             ngaynhap = DateTime.Now.ToString("yyyy-MM-dd");
             Console.WriteLine(ngaynhap);
 
+        }
+
+        NhanVienController ctrl = new NhanVienController();
+        private void NhapKho_Load(object sender, EventArgs e)
+        {
+            NhanVien infoNV = new NhanVien();
+
+            //static -> goi vao duoc class(lay ID tu form dang nhap)
+            infoNV = ctrl.XemMotNV(DangNhap.ID);
+
+            tbTenNV.Text = infoNV.HoTen;
         }
 
         public void getNCC()
@@ -182,9 +193,9 @@ namespace AppQuanLyKho.View
             if (senderComboBox.Text.ToString() == "Thêm mới")
             {
                 this.Enabled = false;
-                //NhapSanPham nhapSanPham = new NhapSanPham(this);
-                //nhapSanPham.Closed += NhapSanPham_Closed;
-                //nhapSanPham.Show();
+                //NhapSanPham nhapsanpham = new NhapSanPham(this);
+                //nhapsanpham.closed += nhapsanpham_closed;
+                //nhapsanpham.show();
                 textBoxLoai.Text = "";
                 textBoxNSX.Text = "";
                 textBoxDVT.Text = "";
@@ -214,13 +225,14 @@ namespace AppQuanLyKho.View
             btnSua.Enabled = true;
         }
 
+
         private void BtnLuu_Click(object sender, EventArgs e)
         {
-            string query = string.Format("THEMPHIEUNHAP '{0}', '{1}', {2}, N'{3}', '{4}', {5} ", maPN, ngaynhap, tongtien, ghichu, maNCC, id);
+            string query = string.Format("exec THEMPHIEUNHAP '{0}', '{1}', {2}, N'{3}', '{4}', {5} ", maPN, ngaynhap, tongtien, ghichu, maNCC, id);
             data.ExcutiveNonQuery(query);
             foreach (DanhSachSP_PN item in ds)
             {
-                string s = string.Format("THEMCTPHIEUNHAP '{0}', '{1}', {2}, {3}", item.Masp, item.Mapn, item.Soluong, item.Dongia);
+                string s = string.Format("exec THEMCTPHIEUNHAP '{0}', '{1}', {2}, {3}", item.Masp, item.Mapn, item.Soluong, item.Dongia);
                 data.ExcutiveNonQuery(s);
             }
         }

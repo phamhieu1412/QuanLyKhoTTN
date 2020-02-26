@@ -111,6 +111,7 @@
             this.cbShowPass.TabIndex = 3;
             this.cbShowPass.Text = "Hiển thị mật khẩu";
             this.cbShowPass.UseVisualStyleBackColor = true;
+            this.cbShowPass.CheckedChanged += new System.EventHandler(this.CbShowPass_CheckedChanged);
             // 
             // DangNhap
             // 

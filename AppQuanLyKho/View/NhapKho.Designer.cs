@@ -52,11 +52,11 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.gbTTSP = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.textBoxNSX = new System.Windows.Forms.TextBox();
             this.textBoxDVT = new System.Windows.Forms.TextBox();
             this.textBoxLoai = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSanPham)).BeginInit();
             this.gbDSSP.SuspendLayout();
             this.gbTTSP.SuspendLayout();
@@ -129,7 +129,6 @@
             // 
             this.tbMaPN.Location = new System.Drawing.Point(61, 12);
             this.tbMaPN.Name = "tbMaPN";
-            this.tbMaPN.ReadOnly = true;
             this.tbMaPN.Size = new System.Drawing.Size(100, 20);
             this.tbMaPN.TabIndex = 23;
             // 
@@ -294,26 +293,14 @@
             this.gbTTSP.TabStop = false;
             this.gbTTSP.Text = "Thông tin sản phẩm";
             // 
-            // textBoxNSX
+            // label11
             // 
-            this.textBoxNSX.Location = new System.Drawing.Point(385, 52);
-            this.textBoxNSX.Name = "textBoxNSX";
-            this.textBoxNSX.Size = new System.Drawing.Size(144, 20);
-            this.textBoxNSX.TabIndex = 25;
-            // 
-            // textBoxDVT
-            // 
-            this.textBoxDVT.Location = new System.Drawing.Point(385, 112);
-            this.textBoxDVT.Name = "textBoxDVT";
-            this.textBoxDVT.Size = new System.Drawing.Size(144, 20);
-            this.textBoxDVT.TabIndex = 24;
-            // 
-            // textBoxLoai
-            // 
-            this.textBoxLoai.Location = new System.Drawing.Point(385, 82);
-            this.textBoxLoai.Name = "textBoxLoai";
-            this.textBoxLoai.Size = new System.Drawing.Size(144, 20);
-            this.textBoxLoai.TabIndex = 23;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(293, 85);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(45, 13);
+            this.label11.TabIndex = 27;
+            this.label11.Text = "Tên loại";
             // 
             // label9
             // 
@@ -324,14 +311,29 @@
             this.label9.TabIndex = 26;
             this.label9.Text = "Tên  NCC";
             // 
-            // label11
+            // textBoxNSX
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(293, 85);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(45, 13);
-            this.label11.TabIndex = 27;
-            this.label11.Text = "Tên loại";
+            this.textBoxNSX.Location = new System.Drawing.Point(385, 52);
+            this.textBoxNSX.Name = "textBoxNSX";
+            this.textBoxNSX.ReadOnly = true;
+            this.textBoxNSX.Size = new System.Drawing.Size(144, 20);
+            this.textBoxNSX.TabIndex = 25;
+            // 
+            // textBoxDVT
+            // 
+            this.textBoxDVT.Location = new System.Drawing.Point(385, 112);
+            this.textBoxDVT.Name = "textBoxDVT";
+            this.textBoxDVT.ReadOnly = true;
+            this.textBoxDVT.Size = new System.Drawing.Size(144, 20);
+            this.textBoxDVT.TabIndex = 24;
+            // 
+            // textBoxLoai
+            // 
+            this.textBoxLoai.Location = new System.Drawing.Point(385, 82);
+            this.textBoxLoai.Name = "textBoxLoai";
+            this.textBoxLoai.ReadOnly = true;
+            this.textBoxLoai.Size = new System.Drawing.Size(144, 20);
+            this.textBoxLoai.TabIndex = 23;
             // 
             // NhapKho
             // 
@@ -350,6 +352,7 @@
             this.Controls.Add(this.label1);
             this.Name = "NhapKho";
             this.Text = "NhapKho";
+            this.Load += new System.EventHandler(this.NhapKho_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSanPham)).EndInit();
             this.gbDSSP.ResumeLayout(false);
             this.gbTTSP.ResumeLayout(false);
