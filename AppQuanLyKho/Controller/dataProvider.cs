@@ -13,7 +13,7 @@ namespace AppQuanLyKho.Controller
 {
     class dataProvider
     {
-        SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-HKOJN4O;Initial Catalog=TTN_QLKho;Integrated Security=True");
+        SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-CDU70QA;Initial Catalog=TTN_QLKho;Integrated Security=True");
 
         public DataTable ExcutiveQuery(string query)
         {
