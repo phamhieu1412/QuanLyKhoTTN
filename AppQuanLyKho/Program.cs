@@ -17,7 +17,7 @@ namespace AppQuanLyKho
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new NhapKho());
+            Application.Run(new DangNhap());
         }
     }
 }

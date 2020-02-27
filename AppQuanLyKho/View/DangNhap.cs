@@ -76,5 +76,20 @@ namespace AppQuanLyKho.View
             }
 
         }
+
+        private void DangNhap_Load(object sender, EventArgs e)
+        {
+            this.KeyPreview = true;
+        }
+
+        private void DangNhap_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                TroGiup.FormName = "DangNhap";
+                TroGiup troGiup = new TroGiup();
+                troGiup.ShowDialog();
+            }
+        }
     }
 }

@@ -13,7 +13,7 @@ namespace AppQuanLyKho.Controller
 {
     class dataProvider
     {
-        SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-CDU70QA;Initial Catalog=TTN_QLKho;Integrated Security=True");
+        SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-LAOT6MD\GNOS02;Initial Catalog=TTN_QLKho;Integrated Security=True");
 
         public DataTable ExcutiveQuery(string query)
         {
@@ -352,5 +352,147 @@ namespace AppQuanLyKho.Controller
         //    sqlConnection.Close();
         //    return sanPham;
         //}
+
+        /// //////////////////////////////////////////////////////////////////////////////////////////////////////
+        //Trung lam phieu xuat
+        public string MaPhieuXuatMoi()
+        {
+            string s = "";
+            string query;
+            if (sqlConnection.State == ConnectionState.Closed)
+                sqlConnection.Open();
+            query = "SELECT TOP 1 MaPX as LastID FROM PhieuXuat ORDER BY MaPX DESC";
+            try
+            {
+                SqlCommand cm = new SqlCommand(query, sqlConnection);
+                cm.CommandType = CommandType.Text;
+                s = (string)cm.ExecuteScalar();
+
+
+            }
+            catch (SqlException e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            sqlConnection.Close();
+            if (s != "")
+            {
+                s = s.Replace("PX", "99");
+                int temp = Convert.ToInt32(s);
+                temp++;
+                s = temp.ToString();
+                s = s.Replace("99", "PX");
+                return s;
+            }
+            else
+                return "";
+        }
+        public string TenKhachHang(string MaKhachHang)
+        {
+            string s = "";
+            string query;
+            if (sqlConnection.State == ConnectionState.Closed)
+                sqlConnection.Open();
+            query = "Select HoTen from KhachHang where MaKH = '" + MaKhachHang + "'";
+            try
+            {
+                SqlCommand cm = new SqlCommand(query, sqlConnection);
+                cm.CommandType = CommandType.Text;
+                if (cm.ExecuteScalar() != null)
+                {
+                    s = (string)cm.ExecuteScalar();
+
+                }
+
+            }
+            catch (SqlException e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            sqlConnection.Close();
+            return s;
+        }
+        public bool KiemTraMaKH(string MaKH)
+        {
+            bool s = false;
+            string query;
+            if (sqlConnection.State == ConnectionState.Closed)
+                sqlConnection.Open();
+            query = "Select * from KhachHang where MaKH = '" + MaKH + "'";
+            try
+            {
+                SqlCommand cm = new SqlCommand(query, sqlConnection);
+                cm.CommandType = CommandType.Text;
+                if (cm.ExecuteScalar() != null)
+                {
+                    s = true;
+                }
+                else
+                    s = false;
+
+            }
+            catch (SqlException e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            sqlConnection.Close();
+            return s;
+        }
+        public void ThemKH(string MaKH, string HoTen)
+        {
+
+            string query;
+            if (sqlConnection.State == ConnectionState.Closed)
+                sqlConnection.Open();
+            query = "insert into KhachHang(MaKH,HoTen) values ('" + MaKH + "'," + "N'" + HoTen + "')";
+            try
+            {
+                SqlCommand cm = new SqlCommand(query, sqlConnection);
+                if (cm.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("them thanh cong");
+                }
+                else
+                    MessageBox.Show("them that bai");
+
+            }
+            catch (SqlException e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            sqlConnection.Close();
+        }
+        public void ThemPhieuXuat(string MaPX, DateTime NgayXuat, int TongTien, string GhiChu, int Id, string MaSP, int SoLuong, string MaKH)
+        {
+            string query;
+            if (sqlConnection.State == ConnectionState.Closed)
+                sqlConnection.Open();
+            query = "insert into PhieuXuat(MaPX,NgayMua,TongTien,GhiChu,Id,MaKH) " +
+                " values ('" + MaPX + "','" + NgayXuat + "','" + TongTien + "',N'" + GhiChu + "','" + Id + "','" + MaKH + "')";
+            try
+            {
+                SqlCommand cm = new SqlCommand(query, sqlConnection);
+                if (cm.ExecuteNonQuery() == 1)
+                {
+                    query = "insert into CT_PhieuXuat(MaPX,MaSP,SoLuong) " +
+                " values ('" + MaPX + "','" + MaSP + "','" + SoLuong + "')";
+                    SqlCommand cm1 = new SqlCommand(query, sqlConnection);
+                    if (cm1.ExecuteNonQuery() == 1)
+                    {
+                        MessageBox.Show("them thanh cong");
+                    }
+                    else
+                        MessageBox.Show("them that bai");
+                }
+                else
+                    MessageBox.Show("them that bai");
+
+            }
+            catch (SqlException e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            sqlConnection.Close();
+        }
     }
 }
