@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxNSX = new System.Windows.Forms.TextBox();
+            this.textBoxDonGia = new System.Windows.Forms.TextBox();
+            this.textBoxMaSP = new System.Windows.Forms.TextBox();
+            this.textBoxTensp = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.comboBoxPhanLoai = new System.Windows.Forms.ComboBox();
+            this.textBoxDonViTinh = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -48,37 +48,38 @@
             this.button1.Location = new System.Drawing.Point(193, 174);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(122, 23);
-            this.button1.TabIndex = 0;
+            this.button1.TabIndex = 7;
             this.button1.Text = "Thêm sản phẩm";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // textBoxNSX
             // 
-            this.textBox1.Location = new System.Drawing.Point(115, 77);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(130, 20);
-            this.textBox1.TabIndex = 1;
+            this.textBoxNSX.Location = new System.Drawing.Point(115, 77);
+            this.textBoxNSX.Name = "textBoxNSX";
+            this.textBoxNSX.Size = new System.Drawing.Size(130, 20);
+            this.textBoxNSX.TabIndex = 3;
             // 
-            // textBox2
+            // textBoxDonGia
             // 
-            this.textBox2.Location = new System.Drawing.Point(372, 77);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(130, 20);
-            this.textBox2.TabIndex = 1;
+            this.textBoxDonGia.Location = new System.Drawing.Point(372, 77);
+            this.textBoxDonGia.Name = "textBoxDonGia";
+            this.textBoxDonGia.Size = new System.Drawing.Size(130, 20);
+            this.textBoxDonGia.TabIndex = 4;
             // 
-            // textBox3
+            // textBoxMaSP
             // 
-            this.textBox3.Location = new System.Drawing.Point(115, 28);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(130, 20);
-            this.textBox3.TabIndex = 1;
+            this.textBoxMaSP.Location = new System.Drawing.Point(115, 28);
+            this.textBoxMaSP.Name = "textBoxMaSP";
+            this.textBoxMaSP.Size = new System.Drawing.Size(130, 20);
+            this.textBoxMaSP.TabIndex = 1;
             // 
-            // textBox4
+            // textBoxTensp
             // 
-            this.textBox4.Location = new System.Drawing.Point(372, 28);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(130, 20);
-            this.textBox4.TabIndex = 1;
+            this.textBoxTensp.Location = new System.Drawing.Point(372, 28);
+            this.textBoxTensp.Name = "textBoxTensp";
+            this.textBoxTensp.Size = new System.Drawing.Size(130, 20);
+            this.textBoxTensp.TabIndex = 2;
             // 
             // label1
             // 
@@ -125,20 +126,22 @@
             this.label7.TabIndex = 2;
             this.label7.Text = "Đơn giá:";
             // 
-            // comboBox1
+            // comboBoxPhanLoai
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(115, 125);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(130, 21);
-            this.comboBox1.TabIndex = 3;
+            this.comboBoxPhanLoai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxPhanLoai.FormattingEnabled = true;
+            this.comboBoxPhanLoai.Location = new System.Drawing.Point(115, 125);
+            this.comboBoxPhanLoai.Name = "comboBoxPhanLoai";
+            this.comboBoxPhanLoai.Size = new System.Drawing.Size(130, 21);
+            this.comboBoxPhanLoai.TabIndex = 5;
+            this.comboBoxPhanLoai.SelectedIndexChanged += new System.EventHandler(this.comboBoxPhanLoai_SelectedIndexChanged);
             // 
-            // textBox5
+            // textBoxDonViTinh
             // 
-            this.textBox5.Location = new System.Drawing.Point(372, 125);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(130, 20);
-            this.textBox5.TabIndex = 1;
+            this.textBoxDonViTinh.Location = new System.Drawing.Point(372, 125);
+            this.textBoxDonViTinh.Name = "textBoxDonViTinh";
+            this.textBoxDonViTinh.Size = new System.Drawing.Size(130, 20);
+            this.textBoxDonViTinh.TabIndex = 6;
             // 
             // label4
             // 
@@ -151,21 +154,22 @@
             // 
             // NhapSanPham
             // 
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(526, 226);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBoxPhanLoai);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxTensp);
+            this.Controls.Add(this.textBoxMaSP);
+            this.Controls.Add(this.textBoxDonViTinh);
+            this.Controls.Add(this.textBoxDonGia);
+            this.Controls.Add(this.textBoxNSX);
             this.Controls.Add(this.button1);
             this.Name = "NhapSanPham";
             this.Text = "Nhap San Pham";
@@ -177,17 +181,17 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxNSX;
+        private System.Windows.Forms.TextBox textBoxDonGia;
+        private System.Windows.Forms.TextBox textBoxMaSP;
+        private System.Windows.Forms.TextBox textBoxTensp;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.ComboBox comboBoxPhanLoai;
+        private System.Windows.Forms.TextBox textBoxDonViTinh;
         private System.Windows.Forms.Label label4;
     }
 }

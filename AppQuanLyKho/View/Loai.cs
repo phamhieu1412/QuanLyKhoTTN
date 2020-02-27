@@ -39,7 +39,7 @@ namespace AppQuanLyKho.View
         private void buttonThem_Click(object sender, EventArgs e)
         {
             getdata();
-            if (maloai == "" || tenloai == "" || Regex.IsMatch(maloai, @"^\s") || Regex.IsMatch(tenloai, @"^\s"))
+            if (maloai == "" || tenloai == "" || Regex.IsMatch(maloai,@"^\s") || Regex.IsMatch(tenloai, @"^\s"))
             {
                 MessageBox.Show("Mã loại và tên loại không được bỏ trống");
                 textBoxMaLoai.Text = "";
@@ -56,10 +56,10 @@ namespace AppQuanLyKho.View
                 }
                 else
                 {
-                    string str1 = string.Format("THEMLOAI '{0}', '{1}', '{2}'", maloai, tenloai, mota);
+                    string str1 = string.Format("THEMLOAI '{0}', '{1}', '{2}'", maloai, tenloai, mota) ;
                     data.ExcutiveNonQuery(str1);
                     this.Close();
-                    //frmsp.getDS_Loai();
+                    frmsp.getDS_Loai();
                     frmsp.Enabled = true;
                 }
             }
