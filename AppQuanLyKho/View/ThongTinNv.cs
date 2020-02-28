@@ -24,6 +24,7 @@ namespace AppQuanLyKho.View
         private void ThongTinNV_Load(object sender, EventArgs e)
         {
             NhanVien infoNV = new NhanVien();
+            this.KeyPreview = true;
 
             //static -> goi vao duoc class(lay ID tu form dang nhap)
             infoNV = ctrl.XemMotNV(DangNhap.ID);
@@ -35,6 +36,21 @@ namespace AppQuanLyKho.View
             NV_Email.Text = infoNV.Email;
             NV_DiaChi.Text = infoNV.DiaChi;
             
+        }
+
+        private void ThongTinNV_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void ThongTinNV_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                TroGiup.FormName = "GDC_TK_ThongTinTaiKhoan";
+                TroGiup troGiup = new TroGiup();
+                troGiup.ShowDialog();
+            }
         }
     }
 }

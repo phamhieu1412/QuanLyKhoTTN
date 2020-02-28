@@ -109,12 +109,6 @@
     <Compile Include="View\TroGiup.Designer.cs">
       <DependentUpon>TroGiup.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\XuatKho.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\XuatKho.Designer.cs">
-      <DependentUpon>XuatKho.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\NhapKho.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +122,12 @@
     </Compile>
     <Compile Include="View\ThongTinNv.Designer.cs">
       <DependentUpon>ThongTinNv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\XuatKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\XuatKho.designer.cs">
+      <DependentUpon>XuatKho.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="View\DanhSachNhanVien.resx">
       <DependentUpon>DanhSachNhanVien.cs</DependentUpon>
@@ -156,8 +156,8 @@
     <EmbeddedResource Include="View\SuaTTSanPham.resx">
       <DependentUpon>SuaTTSanPham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\XuatKho.resx">
-      <DependentUpon>XuatKho.cs</DependentUpon>
+    <EmbeddedResource Include="View\TroGiup.resx">
+      <DependentUpon>TroGiup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -167,9 +167,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="View\ThongTinNv.resx">
       <DependentUpon>ThongTinNv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\XuatKho.resx">
+      <DependentUpon>XuatKho.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -184,6 +188,59 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Annotation 2020-02-27 103412.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annotation 2020-02-26 224538.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annotation 2020-02-26 235536.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annotation 2020-02-27 104509.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annotation 2020-02-27 110059.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annotation 2020-02-27 110451 - Copy %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annotation 2020-02-27 1100591.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annotation 2020-02-27 133528%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annotation 2020-02-27 133528%282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annotation 2020-02-27 2106081.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annotation 2020-02-27 133528%285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annotation 2020-02-26 155615%283%29 - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annotation 2020-02-26 185027.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annotation 2020-02-26 211841.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annotation 2020-02-26 213912.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annotation 2020-02-26 220348.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annotation 2020-02-26 2118411.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annotation 2020-02-26 2118412.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

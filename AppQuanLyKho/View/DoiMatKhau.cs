@@ -28,6 +28,7 @@ namespace AppQuanLyKho.View
 
             txtTenDN.Text = nv.TenDangNhap;
             txtMKHienTai.Text = nv.MatKhau;
+            this.KeyPreview = true;
         }
 
         private void BtnXacNhan_Click(object sender, EventArgs e)
@@ -49,6 +50,16 @@ namespace AppQuanLyKho.View
             else
                 MessageBox.Show("Mật khẩu mới không trùng nhau !");
            
+        }
+
+        private void DoiMatKhau_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                TroGiup.FormName = "GDC_TK_" + this.Name;
+                TroGiup troGiup = new TroGiup();
+                troGiup.ShowDialog();
+            }
         }
     }
 

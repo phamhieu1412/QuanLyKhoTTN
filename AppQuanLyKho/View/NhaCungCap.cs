@@ -67,6 +67,7 @@ namespace AppQuanLyKho.View
         {
             KetNoiDatabase();
             LoadDataFromDataGridToTextBox();
+            this.KeyPreview = true;
         }
 
         private void btnNext_Click(object sender, EventArgs e)
@@ -308,6 +309,17 @@ namespace AppQuanLyKho.View
         {
             XoaData();
             KetNoiDatabase();
+        }
+
+        private void NhaCungCap_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if (e.KeyCode == Keys.F1)
+            {
+                TroGiup.FormName = "GDC_NV" + this.Name;
+                TroGiup troGiup = new TroGiup();
+                troGiup.ShowDialog();
+            }
         }
     }
 

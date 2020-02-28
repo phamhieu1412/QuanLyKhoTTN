@@ -74,6 +74,7 @@ namespace AppQuanLyKho.View
             loaiCb.DataSource = danhSachLoai;
 
             Labling(1);
+            this.KeyPreview = true;
         }
 
         private void BtnTimKiem_Click(object sender, EventArgs e)
@@ -179,6 +180,23 @@ namespace AppQuanLyKho.View
         {
             NhapKho nk = new NhapKho();
             nk.ShowDialog();
+        }
+
+        private void GiaoDienChinh_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                TroGiup.FormName = "GDC_" + this.Name;
+                TroGiup tg = new TroGiup();
+                tg.ShowDialog();
+            }
+        }
+
+        private void trợGiúpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TroGiup.FormName = "GDC_GiaoDienChinh";
+            TroGiup tg = new TroGiup();
+            tg.ShowDialog();
         }
     }
 }

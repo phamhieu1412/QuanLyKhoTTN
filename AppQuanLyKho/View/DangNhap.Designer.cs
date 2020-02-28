@@ -43,50 +43,56 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(79, 24);
+            this.label1.Location = new System.Drawing.Point(118, 37);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 33);
+            this.label1.Size = new System.Drawing.Size(209, 50);
             this.label1.TabIndex = 0;
             this.label1.Text = "Đăng Nhập";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 85);
+            this.label2.Location = new System.Drawing.Point(34, 131);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 13);
+            this.label2.Size = new System.Drawing.Size(120, 20);
             this.label2.TabIndex = 12;
             this.label2.Text = "Tên đăng nhập:";
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(111, 82);
+            this.txtUserName.Location = new System.Drawing.Point(166, 126);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(164, 20);
+            this.txtUserName.Size = new System.Drawing.Size(244, 26);
             this.txtUserName.TabIndex = 1;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(111, 119);
+            this.txtPassword.Location = new System.Drawing.Point(166, 183);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(164, 20);
+            this.txtPassword.Size = new System.Drawing.Size(244, 26);
             this.txtPassword.TabIndex = 2;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 122);
+            this.label3.Location = new System.Drawing.Point(34, 188);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 13);
+            this.label3.Size = new System.Drawing.Size(75, 20);
             this.label3.TabIndex = 13;
             this.label3.Text = "Mật khẩu";
             // 
             // btnLogIn
             // 
-            this.btnLogIn.Location = new System.Drawing.Point(66, 185);
+            this.btnLogIn.Location = new System.Drawing.Point(99, 285);
+            this.btnLogIn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLogIn.Name = "btnLogIn";
-            this.btnLogIn.Size = new System.Drawing.Size(75, 23);
+            this.btnLogIn.Size = new System.Drawing.Size(112, 35);
             this.btnLogIn.TabIndex = 4;
             this.btnLogIn.Text = "Đăng nhập";
             this.btnLogIn.UseVisualStyleBackColor = true;
@@ -94,9 +100,10 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(159, 185);
+            this.btnExit.Location = new System.Drawing.Point(238, 285);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.Size = new System.Drawing.Size(112, 35);
             this.btnExit.TabIndex = 5;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -105,9 +112,10 @@
             // cbShowPass
             // 
             this.cbShowPass.AutoSize = true;
-            this.cbShowPass.Location = new System.Drawing.Point(111, 151);
+            this.cbShowPass.Location = new System.Drawing.Point(166, 232);
+            this.cbShowPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbShowPass.Name = "cbShowPass";
-            this.cbShowPass.Size = new System.Drawing.Size(109, 17);
+            this.cbShowPass.Size = new System.Drawing.Size(159, 24);
             this.cbShowPass.TabIndex = 3;
             this.cbShowPass.Text = "Hiển thị mật khẩu";
             this.cbShowPass.UseVisualStyleBackColor = true;
@@ -115,9 +123,9 @@
             // 
             // DangNhap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(299, 235);
+            this.ClientSize = new System.Drawing.Size(448, 362);
             this.Controls.Add(this.cbShowPass);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogIn);
@@ -126,10 +134,13 @@
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "DangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dang nhap";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.DangNhap_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DangNhap_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

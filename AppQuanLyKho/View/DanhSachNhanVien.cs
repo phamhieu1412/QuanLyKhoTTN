@@ -32,6 +32,8 @@ namespace AppQuanLyKho.View
         {
             dataGridViewDSNV.DataSource = ctrl.XemTatCaNV();
             dataGridViewDSNV.Refresh();
+
+            this.KeyPreview = true;
         }
 
         private void DataGridViewDSNV_DoubleClick(object sender, EventArgs e)
@@ -112,6 +114,16 @@ namespace AppQuanLyKho.View
 
             dataGridViewDSNV.DataSource = ctrl.XemTatCaNV();
             dataGridViewDSNV.Refresh();
+        }
+
+        private void DanhSachNhanVien_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                TroGiup.FormName = "GDC_TK_QuanLy";
+                TroGiup troGiup = new TroGiup();
+                troGiup.ShowDialog();
+            }
         }
     }
 }
