@@ -230,6 +230,21 @@ namespace AppQuanLyKho.View
             updateGRV();
         }
 
+        private void NhapKho_Load(object sender, EventArgs e)
+        {
+            this.KeyPreview = true;
+        }
+
+        private void NhapKho_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                TroGiup.FormName = "GDC_NV_" + this.Name;
+                TroGiup troGiup = new TroGiup();
+                troGiup.ShowDialog();
+            }
+        }
+
         private void NhapSanPham_Closed(object sender, EventArgs e)
         {
             this.Enabled = true;

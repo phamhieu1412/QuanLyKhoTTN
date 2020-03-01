@@ -48,6 +48,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnThoat = new System.Windows.Forms.Button();
             this.gbTTSP = new System.Windows.Forms.GroupBox();
+            this.btXoa = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.textBoxMaNCC = new System.Windows.Forms.TextBox();
             this.textBoxDVT = new System.Windows.Forms.TextBox();
@@ -59,7 +60,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btXoa = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSanPham)).BeginInit();
             this.gbDSSP.SuspendLayout();
             this.gbTTSP.SuspendLayout();
@@ -100,6 +100,7 @@
             this.dataGridViewSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSanPham.Location = new System.Drawing.Point(14, 19);
             this.dataGridViewSanPham.Name = "dataGridViewSanPham";
+            this.dataGridViewSanPham.RowHeadersWidth = 62;
             this.dataGridViewSanPham.Size = new System.Drawing.Size(571, 150);
             this.dataGridViewSanPham.TabIndex = 0;
             this.dataGridViewSanPham.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewSanPham_RowHeaderMouseClick);
@@ -269,6 +270,17 @@
             this.gbTTSP.TabStop = false;
             this.gbTTSP.Text = "Thông tin sản phẩm";
             // 
+            // btXoa
+            // 
+            this.btXoa.Enabled = false;
+            this.btXoa.Location = new System.Drawing.Point(350, 155);
+            this.btXoa.Name = "btXoa";
+            this.btXoa.Size = new System.Drawing.Size(75, 23);
+            this.btXoa.TabIndex = 29;
+            this.btXoa.Text = "Xóa";
+            this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -369,22 +381,11 @@
             this.textBox1.Size = new System.Drawing.Size(396, 20);
             this.textBox1.TabIndex = 0;
             // 
-            // btXoa
-            // 
-            this.btXoa.Enabled = false;
-            this.btXoa.Location = new System.Drawing.Point(350, 155);
-            this.btXoa.Name = "btXoa";
-            this.btXoa.Size = new System.Drawing.Size(75, 23);
-            this.btXoa.TabIndex = 29;
-            this.btXoa.Text = "Xóa";
-            this.btXoa.UseVisualStyleBackColor = true;
-            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
-            // 
             // NhapKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(694, 553);
+            this.ClientSize = new System.Drawing.Size(712, 553);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.tbTongTien);
@@ -398,6 +399,8 @@
             this.Controls.Add(this.label1);
             this.Name = "NhapKho";
             this.Text = "NhapKho";
+            this.Load += new System.EventHandler(this.NhapKho_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NhapKho_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSanPham)).EndInit();
             this.gbDSSP.ResumeLayout(false);
             this.gbTTSP.ResumeLayout(false);

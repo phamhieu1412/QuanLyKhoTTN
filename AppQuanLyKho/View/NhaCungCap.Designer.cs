@@ -139,6 +139,7 @@
             this.dGVNCC.Location = new System.Drawing.Point(14, 237);
             this.dGVNCC.Name = "dGVNCC";
             this.dGVNCC.ReadOnly = true;
+            this.dGVNCC.RowHeadersWidth = 62;
             this.dGVNCC.Size = new System.Drawing.Size(735, 238);
             this.dGVNCC.TabIndex = 39;
             // 
@@ -146,6 +147,7 @@
             // 
             this.MaNCC.DataPropertyName = "MaNCC";
             this.MaNCC.HeaderText = "Mã NCC";
+            this.MaNCC.MinimumWidth = 8;
             this.MaNCC.Name = "MaNCC";
             this.MaNCC.ReadOnly = true;
             this.MaNCC.Width = 70;
@@ -155,6 +157,7 @@
             this.TenNCC.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.TenNCC.DataPropertyName = "TenNCC";
             this.TenNCC.HeaderText = "Tên NCC";
+            this.TenNCC.MinimumWidth = 8;
             this.TenNCC.Name = "TenNCC";
             this.TenNCC.ReadOnly = true;
             this.TenNCC.Width = 280;
@@ -164,6 +167,7 @@
             this.DiaChi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.DiaChi.DataPropertyName = "DiaChi";
             this.DiaChi.HeaderText = "Địa Chỉ";
+            this.DiaChi.MinimumWidth = 8;
             this.DiaChi.Name = "DiaChi";
             this.DiaChi.ReadOnly = true;
             // 
@@ -171,6 +175,7 @@
             // 
             this.DienThoai.DataPropertyName = "DienThoai";
             this.DienThoai.HeaderText = "Điện Thoại";
+            this.DienThoai.MinimumWidth = 8;
             this.DienThoai.Name = "DienThoai";
             this.DienThoai.ReadOnly = true;
             this.DienThoai.Width = 87;
@@ -276,7 +281,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(770, 488);
+            this.ClientSize = new System.Drawing.Size(763, 487);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
@@ -299,6 +304,7 @@
             this.Name = "NhaCungCap";
             this.Text = "NhaCungCap";
             this.Load += new System.EventHandler(this.NhaCungCap_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NhaCungCap_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dGVNCC)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

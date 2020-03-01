@@ -15,6 +15,11 @@ namespace AppQuanLyKho.Model
         private decimal donGia;
         private string donVi;
         private string phanLoai;
+        public SanPham()
+        {
+
+        }
+
         public SanPham(string maSanPham, string tenSanPham, int hamMucDuTru, string nuocSanXuat, decimal donGia, string donVi, string phanLoai)
         {
             this.maSanPham = maSanPham;

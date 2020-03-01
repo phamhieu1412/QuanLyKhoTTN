@@ -19,8 +19,9 @@ namespace AppQuanLyKho.View
         List<SanPham> danhSachSanPham;
         List<string> danhSachLoai;
         private bool tsql;
-
+        private static DataGridView dgv;
         public bool Tsql { get => tsql; set => tsql = value; }
+        public static DataGridView Dgv { get => dgv; set => dgv = value; }
 
         dataProvider provider;
         int maxPage;
@@ -32,6 +33,7 @@ namespace AppQuanLyKho.View
             danhSachLoai = new List<string>();
             provider = new dataProvider();
             InitializeComponent();
+            dgv = dataGridViewListSP;
         }
 
         private void ThôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
@@ -58,6 +60,18 @@ namespace AppQuanLyKho.View
             ncc.ShowDialog();
         }
 
+        private void XuấtKhoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PhieuXuat xuatKho = new PhieuXuat();
+            xuatKho.ShowDialog();
+        }
+
+        private void QuảnLýKhoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThemMoiSP nhapSP = new ThemMoiSP();
+            nhapSP.ShowDialog();
+        }
+
         private void GiaoDienChinh_Load(object sender, EventArgs e)
         {
             //hieu viet
@@ -74,6 +88,7 @@ namespace AppQuanLyKho.View
             loaiCb.DataSource = danhSachLoai;
 
             Labling(1);
+            this.KeyPreview = true;
         }
 
         private void BtnTimKiem_Click(object sender, EventArgs e)
@@ -180,5 +195,23 @@ namespace AppQuanLyKho.View
             NhapKho nk = new NhapKho();
             nk.ShowDialog();
         }
+
+        private void GiaoDienChinh_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                TroGiup.FormName = "GDC_" + this.Name;
+                TroGiup tg = new TroGiup();
+                tg.ShowDialog();
+            }
+        }
+
+        private void trợGiúpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TroGiup.FormName = "GDC_GiaoDienChinh";
+            TroGiup tg = new TroGiup();
+            tg.ShowDialog();
+        }
+
     }
 }

@@ -52,3 +52,47 @@ C:\Users\Welcome\Documents\GitHub\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyK
 C:\Users\Welcome\Documents\GitHub\QuanLyKhoTTN\AppQuanLyKho\bin\Debug\AppQuanLyKho.exe.config
 C:\Users\Welcome\Documents\GitHub\QuanLyKhoTTN\AppQuanLyKho\bin\Debug\AppQuanLyKho.exe
 C:\Users\Welcome\Documents\GitHub\QuanLyKhoTTN\AppQuanLyKho\bin\Debug\AppQuanLyKho.pdb
+E:\$_School_Pj\New folder\QuanLyKhoTTN\AppQuanLyKho\bin\Debug\AppQuanLyKho.exe.config
+E:\$_School_Pj\New folder\QuanLyKhoTTN\AppQuanLyKho\bin\Debug\AppQuanLyKho.exe
+E:\$_School_Pj\New folder\QuanLyKhoTTN\AppQuanLyKho\bin\Debug\AppQuanLyKho.pdb
+E:\$_School_Pj\New folder\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.csprojAssemblyReference.cache
+E:\$_School_Pj\New folder\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.DanhSachNhanVien.resources
+E:\$_School_Pj\New folder\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.DoiMatKhau.resources
+E:\$_School_Pj\New folder\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.DangNhap.resources
+E:\$_School_Pj\New folder\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.Loai.resources
+E:\$_School_Pj\New folder\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.NhaCungCap.resources
+E:\$_School_Pj\New folder\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.NhapSanPham.resources
+E:\$_School_Pj\New folder\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.GiaoDienChinh.resources
+E:\$_School_Pj\New folder\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.NhapKho.resources
+E:\$_School_Pj\New folder\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.SuaTTSanPham.resources
+E:\$_School_Pj\New folder\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.TroGiup.resources
+E:\$_School_Pj\New folder\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.Properties.Resources.resources
+E:\$_School_Pj\New folder\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.ThongTinNV.resources
+E:\$_School_Pj\New folder\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.PhieuXuat.resources
+E:\$_School_Pj\New folder\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.csproj.GenerateResource.cache
+E:\$_School_Pj\New folder\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.exe
+E:\$_School_Pj\New folder\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.pdb
+G:\BtapC#\QuanLyKhoTTN\QuanLyKhoTTN\AppQuanLyKho\bin\Debug\AppQuanLyKho.exe.config
+G:\BtapC#\QuanLyKhoTTN\QuanLyKhoTTN\AppQuanLyKho\bin\Debug\AppQuanLyKho.exe
+G:\BtapC#\QuanLyKhoTTN\QuanLyKhoTTN\AppQuanLyKho\bin\Debug\AppQuanLyKho.pdb
+G:\BtapC#\QuanLyKhoTTN\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.csprojAssemblyReference.cache
+G:\BtapC#\QuanLyKhoTTN\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.DanhSachNhanVien.resources
+G:\BtapC#\QuanLyKhoTTN\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.DoiMatKhau.resources
+G:\BtapC#\QuanLyKhoTTN\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.DangNhap.resources
+G:\BtapC#\QuanLyKhoTTN\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.Loai.resources
+G:\BtapC#\QuanLyKhoTTN\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.NhaCungCap.resources
+G:\BtapC#\QuanLyKhoTTN\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.NhapSanPham.resources
+G:\BtapC#\QuanLyKhoTTN\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.GiaoDienChinh.resources
+G:\BtapC#\QuanLyKhoTTN\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.NhapKho.resources
+G:\BtapC#\QuanLyKhoTTN\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.SuaTTSanPham.resources
+G:\BtapC#\QuanLyKhoTTN\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.TroGiup.resources
+G:\BtapC#\QuanLyKhoTTN\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.Properties.Resources.resources
+G:\BtapC#\QuanLyKhoTTN\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.ThongTinNV.resources
+G:\BtapC#\QuanLyKhoTTN\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.PhieuXuat.resources
+G:\BtapC#\QuanLyKhoTTN\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.csproj.GenerateResource.cache
+G:\BtapC#\QuanLyKhoTTN\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.csproj.CoreCompileInputs.cache
+G:\BtapC#\QuanLyKhoTTN\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.exe
+G:\BtapC#\QuanLyKhoTTN\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.pdb
+G:\BtapC#\QuanLyKhoTTN\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.ThemMoiSP.resources
+G:\BtapC#\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.ThemMoiSP.resources
+G:\BtapC#\QuanLyKhoTTN\AppQuanLyKho\obj\Debug\AppQuanLyKho.View.TroGiup.resources
