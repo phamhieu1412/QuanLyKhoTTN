@@ -211,7 +211,11 @@ namespace AppQuanLyKho.View
             TroGiup.FormName = "GDC_GiaoDienChinh";
             TroGiup tg = new TroGiup();
             tg.ShowDialog();
+<<<<<<< HEAD
         }
 
+=======
+        }
+>>>>>>> 29002583a44238912415c3c1089bac2f529ad113
     }
 }

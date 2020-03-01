@@ -13,7 +13,11 @@ namespace AppQuanLyKho.Controller
 {
     class dataProvider
     {
+<<<<<<< HEAD
         SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-HKOJN4O;Initial Catalog=TTN_QLKho;Integrated Security=True");
+=======
+        SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-LAOT6MD\GNOS02;Initial Catalog=TTN_QLKho;Integrated Security=True");
+>>>>>>> 29002583a44238912415c3c1089bac2f529ad113
 
         public DataTable ExcutiveQuery(string query)
         {
@@ -396,6 +400,7 @@ namespace AppQuanLyKho.Controller
             {
                 MessageBox.Show(e.Message);
             }
+<<<<<<< HEAD
             sqlConnection.Close();
             //if (s != "")
             //{
@@ -408,6 +413,20 @@ namespace AppQuanLyKho.Controller
             //}
             //else
             return "";
+=======
+            sqlConnection.Close();
+            if (s != "")
+            {
+                s = s.Replace("PX", "99");
+                int temp = Convert.ToInt32(s);
+                temp++;
+                s = temp.ToString();
+                s = s.Replace("99", "PX");
+                return s;
+            }
+            else
+                return "";
+>>>>>>> 29002583a44238912415c3c1089bac2f529ad113
         }
         public string TenKhachHang(string MaKhachHang)
         {

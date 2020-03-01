@@ -17,7 +17,11 @@ namespace AppQuanLyKho
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new GiaoDienChinh());
+=======
+            Application.Run(new DangNhap());
+>>>>>>> 29002583a44238912415c3c1089bac2f529ad113
         }
     }
 }
