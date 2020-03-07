@@ -20,7 +20,7 @@ namespace AppQuanLyKho.View
         List<string> danhSachLoai;
         private bool tsql;
         private static DataGridView dtb;
-
+        //form khac dung duoc datagridview
         public static DataGridView Dtb { get => dtb; set => dtb = value; }
         public bool Tsql { get => tsql; set => tsql = value; }
 
@@ -204,5 +204,12 @@ namespace AppQuanLyKho.View
             TroGiup tg = new TroGiup();
             tg.ShowDialog();
         }
+
+        private void XuấtKhoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PhieuXuat xuatKho = new PhieuXuat();
+            xuatKho.ShowDialog();
+        }
+
     }
 }

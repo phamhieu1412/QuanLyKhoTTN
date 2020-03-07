@@ -265,6 +265,11 @@ namespace AppQuanLyKho.View
             }
         }
 
+        private void BtnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void NhapSanPham_Closed(object sender, EventArgs e)
         {
             this.Enabled = true;

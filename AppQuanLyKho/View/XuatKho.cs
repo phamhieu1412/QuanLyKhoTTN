@@ -18,6 +18,8 @@ namespace AppQuanLyKho.View
         List<SanPham> danhSachSanPham;
         List<string> danhSachLoai;
         dataProvider provider;
+        NhanVienController ctrlNV = new NhanVienController();
+
         public PhieuXuat()
         {
             //
@@ -26,6 +28,11 @@ namespace AppQuanLyKho.View
             provider = new dataProvider();
             InitializeComponent();
             dTNgayBan.CustomFormat = "yyyy-MM-dd";
+
+            NhanVien infoNV = new NhanVien();
+            infoNV = ctrlNV.XemMotNV(DangNhap.ID);
+
+            tbTenNV.Text = infoNV.HoTen;
         }
 
         private void PhieuXuat_Load(object sender, EventArgs e)

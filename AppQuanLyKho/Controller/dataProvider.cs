@@ -452,7 +452,7 @@ namespace AppQuanLyKho.Controller
                 MessageBox.Show(e.Message);
             }
             sqlConnection.Close();
-            if (s != "")
+            if (!string.IsNullOrEmpty(s))
             {
                 s = s.Replace("PX", "99");
                 int temp = Convert.ToInt32(s);
@@ -527,10 +527,10 @@ namespace AppQuanLyKho.Controller
                 SqlCommand cm = new SqlCommand(query, sqlConnection);
                 if (cm.ExecuteNonQuery() == 1)
                 {
-                    MessageBox.Show("them thanh cong");
+                    MessageBox.Show("Thêm thành công");
                 }
                 else
-                    MessageBox.Show("them that bai");
+                    MessageBox.Show("Thêm thất bại");
 
             }
             catch (SqlException e)
@@ -556,13 +556,13 @@ namespace AppQuanLyKho.Controller
                     SqlCommand cm1 = new SqlCommand(query, sqlConnection);
                     if (cm1.ExecuteNonQuery() == 1)
                     {
-                        MessageBox.Show("them thanh cong");
+                        MessageBox.Show("Thêm thành công");
                     }
                     else
-                        MessageBox.Show("them that bai");
+                        MessageBox.Show("Thêm thất bại");
                 }
                 else
-                    MessageBox.Show("them that bai");
+                    MessageBox.Show("Thêm thất bại");
 
             }
             catch (SqlException e)

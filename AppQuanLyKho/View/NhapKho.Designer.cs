@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NhapKho));
             this.btnLuu = new System.Windows.Forms.Button();
             this.tbTongTien = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -71,7 +72,7 @@
             this.btnLuu.Location = new System.Drawing.Point(259, 518);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
-            this.btnLuu.TabIndex = 29;
+            this.btnLuu.TabIndex = 8;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
@@ -139,7 +140,7 @@
             this.btnSua.Location = new System.Drawing.Point(254, 155);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 23);
-            this.btnSua.TabIndex = 18;
+            this.btnSua.TabIndex = 5;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
@@ -149,7 +150,7 @@
             this.btnThem.Location = new System.Drawing.Point(158, 155);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 23);
-            this.btnThem.TabIndex = 17;
+            this.btnThem.TabIndex = 4;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
@@ -206,7 +207,7 @@
             this.textBoxDonGia.Location = new System.Drawing.Point(99, 112);
             this.textBoxDonGia.Name = "textBoxDonGia";
             this.textBoxDonGia.Size = new System.Drawing.Size(134, 20);
-            this.textBoxDonGia.TabIndex = 6;
+            this.textBoxDonGia.TabIndex = 3;
             // 
             // label4
             // 
@@ -222,7 +223,7 @@
             this.textBoxSoLuong.Location = new System.Drawing.Point(99, 82);
             this.textBoxSoLuong.Name = "textBoxSoLuong";
             this.textBoxSoLuong.Size = new System.Drawing.Size(134, 20);
-            this.textBoxSoLuong.TabIndex = 3;
+            this.textBoxSoLuong.TabIndex = 2;
             // 
             // label3
             // 
@@ -238,9 +239,10 @@
             this.btnThoat.Location = new System.Drawing.Point(355, 518);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(75, 23);
-            this.btnThoat.TabIndex = 30;
+            this.btnThoat.TabIndex = 9;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.BtnThoat_Click);
             // 
             // gbTTSP
             // 
@@ -276,7 +278,7 @@
             this.btXoa.Location = new System.Drawing.Point(350, 155);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(75, 23);
-            this.btXoa.TabIndex = 29;
+            this.btXoa.TabIndex = 6;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
             this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
@@ -340,7 +342,7 @@
             this.tbMaPN.Location = new System.Drawing.Point(61, 12);
             this.tbMaPN.Name = "tbMaPN";
             this.tbMaPN.Size = new System.Drawing.Size(100, 20);
-            this.tbMaPN.TabIndex = 23;
+            this.tbMaPN.TabIndex = 1;
             // 
             // label2
             // 
@@ -377,7 +379,7 @@
             this.textBox1.Location = new System.Drawing.Point(14, 16);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(396, 20);
-            this.textBox1.TabIndex = 0;
+            this.textBox1.TabIndex = 7;
             // 
             // NhapKho
             // 
@@ -395,6 +397,7 @@
             this.Controls.Add(this.tbMaPN);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "NhapKho";
             this.Text = "NhapKho";
             this.Load += new System.EventHandler(this.NhapKho_Load);

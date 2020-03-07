@@ -40,6 +40,21 @@ namespace AppQuanLyKho.Model
             this.isAdmin = isAdmin;
         }
 
+        public NhanVien(string tenDangNhap, string matKhau, string hoTen, string diaChi, string sdt, DateTime ngaySinh, bool gioiTinh, string email, bool isActive, bool isAdmin)
+        {
+            this.id = 0;
+            this.tenDangNhap = tenDangNhap;
+            this.matKhau = matKhau;
+            this.hoTen = hoTen;
+            this.diaChi = diaChi;
+            this.sdt = sdt;
+            this.ngaySinh = ngaySinh;
+            this.gioiTinh = gioiTinh;
+            this.email = email;
+            this.isActive = isActive;
+            this.isAdmin = isAdmin;
+        }
+
         public string TenDangNhap { get => tenDangNhap; set => tenDangNhap = value; }
         public string MatKhau { get => matKhau; set => matKhau = value; }
         public string HoTen { get => hoTen; set => hoTen = value; }

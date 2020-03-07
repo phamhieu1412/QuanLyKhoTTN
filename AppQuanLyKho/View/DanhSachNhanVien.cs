@@ -55,16 +55,12 @@ namespace AppQuanLyKho.View
 
         private void BtnThem_Click(object sender, EventArgs e)
         {
-            txtId.Text = "";
-            txtTK.Text = "";
-            txtMK.Text = "";
-            txtTen.Text = "";
-            txtSDT.Text = "";
-            cbbGT.Text = "";
-            txtDiaChi.Text = "";
-            txtEmail.Text = "";
-            cbbQuyen.Text = "";
-            cbbIsActive.Text = "";
+            NhanVien nv = new NhanVien(txtTK.Text, txtMK.Text, txtTen.Text, txtDiaChi.Text, txtSDT.Text, dTPNgaySinh.Value, bool.Parse(cbbGT.Text), txtEmail.Text, bool.Parse(cbbIsActive.Text), bool.Parse(cbbQuyen.Text) );
+
+            ctrl.Them(nv);
+
+            dataGridViewDSNV.DataSource = ctrl.XemTatCaNV();
+            dataGridViewDSNV.Refresh();
         }
 
         private void BtnXoa_Click(object sender, EventArgs e)
@@ -82,7 +78,7 @@ namespace AppQuanLyKho.View
         {
             NhanVien nv = new NhanVien();
 
-            nv.Id = Int16.Parse(txtId.Text);
+            //nv.Id = Int16.Parse(txtId.Text);
             nv.TenDangNhap = txtTK.Text;
             nv.MatKhau = txtMK.Text;
             nv.HoTen = txtTen.Text;

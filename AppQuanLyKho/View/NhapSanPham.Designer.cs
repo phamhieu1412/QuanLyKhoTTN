@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NhapSanPham));
             this.button1 = new System.Windows.Forms.Button();
             this.textBoxNSX = new System.Windows.Forms.TextBox();
             this.textBoxDonGia = new System.Windows.Forms.TextBox();
@@ -133,7 +134,7 @@
             this.comboBoxPhanLoai.Location = new System.Drawing.Point(115, 164);
             this.comboBoxPhanLoai.Name = "comboBoxPhanLoai";
             this.comboBoxPhanLoai.Size = new System.Drawing.Size(130, 21);
-            this.comboBoxPhanLoai.TabIndex = 5;
+            this.comboBoxPhanLoai.TabIndex = 6;
             this.comboBoxPhanLoai.SelectedIndexChanged += new System.EventHandler(this.comboBoxPhanLoai_SelectedIndexChanged);
             // 
             // textBoxDonViTinh
@@ -141,7 +142,7 @@
             this.textBoxDonViTinh.Location = new System.Drawing.Point(115, 135);
             this.textBoxDonViTinh.Name = "textBoxDonViTinh";
             this.textBoxDonViTinh.Size = new System.Drawing.Size(130, 20);
-            this.textBoxDonViTinh.TabIndex = 6;
+            this.textBoxDonViTinh.TabIndex = 5;
             // 
             // label4
             // 
@@ -171,6 +172,7 @@
             this.Controls.Add(this.textBoxDonGia);
             this.Controls.Add(this.textBoxNSX);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "NhapSanPham";
             this.Text = "Nhap San Pham";
             this.ResumeLayout(false);
