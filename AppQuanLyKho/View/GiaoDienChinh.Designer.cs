@@ -75,27 +75,27 @@
             this.đổiMậtKhẩuToolStripMenuItem,
             this.quanLyToolStripMenuItem});
             this.tàiKhoảnToolStripMenuItem.Name = "tàiKhoảnToolStripMenuItem";
-            this.tàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(70, 22);
+            this.tàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(69, 22);
             this.tàiKhoảnToolStripMenuItem.Text = "&Tài khoản";
             // 
             // thôngTinTàiKhoảnToolStripMenuItem
             // 
             this.thôngTinTàiKhoảnToolStripMenuItem.Name = "thôngTinTàiKhoảnToolStripMenuItem";
-            this.thôngTinTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.thôngTinTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.thôngTinTàiKhoảnToolStripMenuItem.Text = "Thông tin tài khoản";
             this.thôngTinTàiKhoảnToolStripMenuItem.Click += new System.EventHandler(this.ThôngTinTàiKhoảnToolStripMenuItem_Click);
             // 
             // đổiMậtKhẩuToolStripMenuItem
             // 
             this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
-            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.đổiMậtKhẩuToolStripMenuItem.Text = "Đổi mật khẩu";
             this.đổiMậtKhẩuToolStripMenuItem.Click += new System.EventHandler(this.ĐổiMậtKhẩuToolStripMenuItem_Click);
             // 
             // quanLyToolStripMenuItem
             // 
             this.quanLyToolStripMenuItem.Name = "quanLyToolStripMenuItem";
-            this.quanLyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.quanLyToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.quanLyToolStripMenuItem.Text = "Quản lý ";
             this.quanLyToolStripMenuItem.Click += new System.EventHandler(this.QuảnLýToolStripMenuItem_Click);
             // 
@@ -133,14 +133,14 @@
             // trợGiúpToolStripMenuItem
             // 
             this.trợGiúpToolStripMenuItem.Name = "trợGiúpToolStripMenuItem";
-            this.trợGiúpToolStripMenuItem.Size = new System.Drawing.Size(63, 22);
+            this.trợGiúpToolStripMenuItem.Size = new System.Drawing.Size(62, 22);
             this.trợGiúpToolStripMenuItem.Text = "&Trợ giúp";
             this.trợGiúpToolStripMenuItem.Click += new System.EventHandler(this.trợGiúpToolStripMenuItem_Click);
             // 
             // index3Lb
             // 
             this.index3Lb.AutoSize = true;
-            this.index3Lb.Location = new System.Drawing.Point(293, 355);
+            this.index3Lb.Location = new System.Drawing.Point(295, 355);
             this.index3Lb.Name = "index3Lb";
             this.index3Lb.Size = new System.Drawing.Size(16, 13);
             this.index3Lb.TabIndex = 32;
@@ -150,7 +150,7 @@
             // index5Lb
             // 
             this.index5Lb.AutoSize = true;
-            this.index5Lb.Location = new System.Drawing.Point(374, 355);
+            this.index5Lb.Location = new System.Drawing.Point(376, 355);
             this.index5Lb.Name = "index5Lb";
             this.index5Lb.Size = new System.Drawing.Size(16, 13);
             this.index5Lb.TabIndex = 31;
@@ -160,7 +160,7 @@
             // index4Lb
             // 
             this.index4Lb.AutoSize = true;
-            this.index4Lb.Location = new System.Drawing.Point(334, 355);
+            this.index4Lb.Location = new System.Drawing.Point(336, 355);
             this.index4Lb.Name = "index4Lb";
             this.index4Lb.Size = new System.Drawing.Size(16, 13);
             this.index4Lb.TabIndex = 30;
@@ -170,7 +170,7 @@
             // index2Lb
             // 
             this.index2Lb.AutoSize = true;
-            this.index2Lb.Location = new System.Drawing.Point(252, 355);
+            this.index2Lb.Location = new System.Drawing.Point(254, 355);
             this.index2Lb.Name = "index2Lb";
             this.index2Lb.Size = new System.Drawing.Size(16, 13);
             this.index2Lb.TabIndex = 29;
@@ -180,7 +180,7 @@
             // index1Lb
             // 
             this.index1Lb.AutoSize = true;
-            this.index1Lb.Location = new System.Drawing.Point(211, 355);
+            this.index1Lb.Location = new System.Drawing.Point(213, 355);
             this.index1Lb.Name = "index1Lb";
             this.index1Lb.Size = new System.Drawing.Size(16, 13);
             this.index1Lb.TabIndex = 28;

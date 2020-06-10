@@ -36,6 +36,34 @@ namespace AppQuanLyKho.Controller
             return data;
         }
 
+        public List<NhanVien> TimKiemNV(string keyword)
+        {
+            List<NhanVien> nv = new List<NhanVien>();
+            string query;
+            sqlConnection.Open();
+
+            query = "select * " +
+                    "from NhanVien " +
+                    "Where TenDN like '%" + keyword + "%' Or HoTen like N'%" + keyword + "%' ";
+
+            try
+            {
+                SqlCommand command = new SqlCommand(query, sqlConnection);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    nv.Add(new NhanVien((int)reader["Id"], (string)reader["TenDN"], (string)reader["MatKhau"], (string)reader["HoTen"], (string)reader["DiaChi"], (string)reader["SDT"], (DateTime)reader["NgaySinh"], (bool)reader["GioiTinh"], (string)reader["Email"], (bool)reader["isActive"], (bool)reader["isAdmin"]));
+                }
+                reader.Close();
+            }
+            catch (SqlException e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            sqlConnection.Close();
+            return nv;
+        }
+
         public bool ExcutiveNonQuery(string query)
         {
             //ktra trang thai

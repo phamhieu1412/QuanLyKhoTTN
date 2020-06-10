@@ -39,15 +39,13 @@
             this.lable2 = new System.Windows.Forms.Label();
             this.NV_DiaChi = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.picBAvt = new System.Windows.Forms.PictureBox();
             this.NV_Admin = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picBAvt)).BeginInit();
             this.SuspendLayout();
             // 
             // lable1
             // 
             this.lable1.AutoSize = true;
-            this.lable1.Location = new System.Drawing.Point(160, 25);
+            this.lable1.Location = new System.Drawing.Point(24, 26);
             this.lable1.Name = "lable1";
             this.lable1.Size = new System.Drawing.Size(81, 13);
             this.lable1.TabIndex = 0;
@@ -56,7 +54,7 @@
             // NV_TenDN
             // 
             this.NV_TenDN.AutoSize = true;
-            this.NV_TenDN.Location = new System.Drawing.Point(260, 25);
+            this.NV_TenDN.Location = new System.Drawing.Point(124, 26);
             this.NV_TenDN.Name = "NV_TenDN";
             this.NV_TenDN.Size = new System.Drawing.Size(16, 13);
             this.NV_TenDN.TabIndex = 1;
@@ -65,7 +63,7 @@
             // NV_Email
             // 
             this.NV_Email.AutoSize = true;
-            this.NV_Email.Location = new System.Drawing.Point(260, 100);
+            this.NV_Email.Location = new System.Drawing.Point(124, 101);
             this.NV_Email.Name = "NV_Email";
             this.NV_Email.Size = new System.Drawing.Size(16, 13);
             this.NV_Email.TabIndex = 3;
@@ -74,7 +72,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(160, 100);
+            this.label4.Location = new System.Drawing.Point(24, 101);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(32, 13);
             this.label4.TabIndex = 2;
@@ -83,7 +81,7 @@
             // NV_SDT
             // 
             this.NV_SDT.AutoSize = true;
-            this.NV_SDT.Location = new System.Drawing.Point(260, 75);
+            this.NV_SDT.Location = new System.Drawing.Point(124, 76);
             this.NV_SDT.Name = "NV_SDT";
             this.NV_SDT.Size = new System.Drawing.Size(16, 13);
             this.NV_SDT.TabIndex = 5;
@@ -92,7 +90,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(160, 75);
+            this.label3.Location = new System.Drawing.Point(24, 76);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 13);
             this.label3.TabIndex = 4;
@@ -101,7 +99,7 @@
             // NV_HoTen
             // 
             this.NV_HoTen.AutoSize = true;
-            this.NV_HoTen.Location = new System.Drawing.Point(260, 50);
+            this.NV_HoTen.Location = new System.Drawing.Point(124, 51);
             this.NV_HoTen.Name = "NV_HoTen";
             this.NV_HoTen.Size = new System.Drawing.Size(16, 13);
             this.NV_HoTen.TabIndex = 7;
@@ -110,7 +108,7 @@
             // lable2
             // 
             this.lable2.AutoSize = true;
-            this.lable2.Location = new System.Drawing.Point(160, 50);
+            this.lable2.Location = new System.Drawing.Point(24, 51);
             this.lable2.Name = "lable2";
             this.lable2.Size = new System.Drawing.Size(39, 13);
             this.lable2.TabIndex = 6;
@@ -119,7 +117,7 @@
             // NV_DiaChi
             // 
             this.NV_DiaChi.AutoSize = true;
-            this.NV_DiaChi.Location = new System.Drawing.Point(260, 125);
+            this.NV_DiaChi.Location = new System.Drawing.Point(124, 126);
             this.NV_DiaChi.Name = "NV_DiaChi";
             this.NV_DiaChi.Size = new System.Drawing.Size(16, 13);
             this.NV_DiaChi.TabIndex = 9;
@@ -128,23 +126,15 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(160, 125);
+            this.label5.Location = new System.Drawing.Point(24, 126);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 13);
             this.label5.TabIndex = 8;
             this.label5.Text = "Địa chỉ";
             // 
-            // picBAvt
-            // 
-            this.picBAvt.Location = new System.Drawing.Point(25, 25);
-            this.picBAvt.Name = "picBAvt";
-            this.picBAvt.Size = new System.Drawing.Size(100, 112);
-            this.picBAvt.TabIndex = 10;
-            this.picBAvt.TabStop = false;
-            // 
             // NV_Admin
             // 
-            this.NV_Admin.Location = new System.Drawing.Point(322, 3);
+            this.NV_Admin.Location = new System.Drawing.Point(186, 4);
             this.NV_Admin.Name = "NV_Admin";
             this.NV_Admin.ReadOnly = true;
             this.NV_Admin.Size = new System.Drawing.Size(100, 20);
@@ -154,9 +144,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(441, 159);
+            this.ClientSize = new System.Drawing.Size(298, 159);
             this.Controls.Add(this.NV_Admin);
-            this.Controls.Add(this.picBAvt);
             this.Controls.Add(this.NV_DiaChi);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.NV_HoTen);
@@ -174,7 +163,6 @@
             this.Load += new System.EventHandler(this.ThongTinNV_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ThongTinNV_KeyDown);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ThongTinNV_KeyPress);
-            ((System.ComponentModel.ISupportInitialize)(this.picBAvt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,7 +180,6 @@
         private System.Windows.Forms.Label lable2;
         private System.Windows.Forms.Label NV_DiaChi;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox picBAvt;
         private System.Windows.Forms.TextBox NV_Admin;
     }
 }

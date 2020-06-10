@@ -26,7 +26,7 @@ namespace AppQuanLyKho.View
 
         dataProvider provider;
         int maxPage;
-        int currentpage;
+        int currentpage; 
 
         public GiaoDienChinh()
         {
@@ -37,7 +37,7 @@ namespace AppQuanLyKho.View
             danhSachLoai = new List<string>();
             provider = new dataProvider();
 
-            dtb = dataGridViewListSP;
+            dtb = dataGridViewListSP; 
         }
 
         private void ThôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
@@ -70,9 +70,9 @@ namespace AppQuanLyKho.View
             quanLyToolStripMenuItem.Visible = tsql;
 
             //nam viet
-            maxPage = (int)Math.Ceiling(provider.GetSoSanPham("Tất cả") / 10);
+            //maxPage = (int)Math.Ceiling(provider.GetSoSanPham("Tất cả") / 10);
             // gọi toàn bộ sql vào danhSachSanPham("Tất cả",index)
-            dataGridViewListSP.DataSource = provider.GetSanPham(1, "Tất cả");
+            //dataGridViewListSP.DataSource = provider.GetSanPham(1, "Tất cả");
 
             //quanLyToolStripMenuItem.Visible = tsql;
             // gọi toàn bộ danh sách loại sản phẩm vào danhSachLoai
@@ -152,6 +152,7 @@ namespace AppQuanLyKho.View
                                                current.Cells[3].Value.ToString(),
                                                Convert.ToInt32(current.Cells[4].Value),
                                                current.Cells[5].Value.ToString());
+
             window.FormClosed += Window_FormClosed;
             window.Show();
         }

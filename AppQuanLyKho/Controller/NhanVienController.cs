@@ -62,6 +62,12 @@ namespace AppQuanLyKho.Controller
 
             return nv;
         }
+        public bool TimKiemNV(string id)
+        {
+            string query = string.Format("select * from NhanVien where Id = '{0}'", id);
 
+            return data.CheckMa(query) == id;
+
+        }
     }
 }

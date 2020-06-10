@@ -69,7 +69,7 @@
             this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.isActive = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.isAdmin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tbTim = new System.Windows.Forms.TextBox();
+            this.tbTimKiem = new System.Windows.Forms.TextBox();
             this.btnTim = new System.Windows.Forms.Button();
             this.gbThemMoi.SuspendLayout();
             this.gbDanhSach.SuspendLayout();
@@ -456,12 +456,12 @@
             this.isAdmin.ReadOnly = true;
             this.isAdmin.Width = 150;
             // 
-            // tbTim
+            // tbTimKiem
             // 
-            this.tbTim.Location = new System.Drawing.Point(12, 389);
-            this.tbTim.Name = "tbTim";
-            this.tbTim.Size = new System.Drawing.Size(153, 20);
-            this.tbTim.TabIndex = 14;
+            this.tbTimKiem.Location = new System.Drawing.Point(12, 389);
+            this.tbTimKiem.Name = "tbTimKiem";
+            this.tbTimKiem.Size = new System.Drawing.Size(153, 20);
+            this.tbTimKiem.TabIndex = 14;
             // 
             // btnTim
             // 
@@ -471,6 +471,7 @@
             this.btnTim.TabIndex = 15;
             this.btnTim.Text = "Tìm";
             this.btnTim.UseVisualStyleBackColor = true;
+            this.btnTim.Click += new System.EventHandler(this.BtnTim_Click);
             // 
             // DanhSachNhanVien
             // 
@@ -478,7 +479,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(771, 422);
             this.Controls.Add(this.btnTim);
-            this.Controls.Add(this.tbTim);
+            this.Controls.Add(this.tbTimKiem);
             this.Controls.Add(this.gbDanhSach);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnLuu);
@@ -519,7 +520,7 @@
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.GroupBox gbDanhSach;
         private System.Windows.Forms.DataGridView dataGridViewDSNV;
-        private System.Windows.Forms.TextBox tbTim;
+        private System.Windows.Forms.TextBox tbTimKiem;
         private System.Windows.Forms.Button btnTim;
         private System.Windows.Forms.ComboBox cbbQuyen;
         private System.Windows.Forms.Label label7;
